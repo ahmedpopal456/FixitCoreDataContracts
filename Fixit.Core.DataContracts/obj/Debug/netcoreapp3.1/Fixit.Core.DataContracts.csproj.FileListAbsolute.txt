@@ -1,8 +1,0 @@
-Z:\Programming\Fixit\FixitCoreDataContracts\Fixit.Core.DataContracts\obj\Debug\netcoreapp3.1\Fixit.Core.DataContracts.AssemblyInfoInputs.cache
-Z:\Programming\Fixit\FixitCoreDataContracts\Fixit.Core.DataContracts\obj\Debug\netcoreapp3.1\Fixit.Core.DataContracts.AssemblyInfo.cs
-Z:\Programming\Fixit\FixitCoreDataContracts\Fixit.Core.DataContracts\obj\Debug\netcoreapp3.1\Fixit.Core.DataContracts.csproj.CoreCompileInputs.cache
-Z:\Programming\Fixit\FixitCoreDataContracts\Fixit.Core.DataContracts\bin\Debug\netcoreapp3.1\Fixit.Core.DataContracts.deps.json
-Z:\Programming\Fixit\FixitCoreDataContracts\Fixit.Core.DataContracts\bin\Debug\netcoreapp3.1\Fixit.Core.DataContracts.dll
-Z:\Programming\Fixit\FixitCoreDataContracts\Fixit.Core.DataContracts\bin\Debug\netcoreapp3.1\Fixit.Core.DataContracts.pdb
-Z:\Programming\Fixit\FixitCoreDataContracts\Fixit.Core.DataContracts\obj\Debug\netcoreapp3.1\Fixit.Core.DataContracts.dll
-Z:\Programming\Fixit\FixitCoreDataContracts\Fixit.Core.DataContracts\obj\Debug\netcoreapp3.1\Fixit.Core.DataContracts.pdb
