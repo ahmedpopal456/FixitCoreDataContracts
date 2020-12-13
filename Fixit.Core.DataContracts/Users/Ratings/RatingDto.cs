@@ -9,10 +9,10 @@ namespace Fixit.Core.DataContracts.Users.Ratings
     public float Score { get; set; }
 
     [DataMember]
-    public UserDenormalizedDto ReviewedBy { get; set; }
+    public UserSummaryDto ReviewedByUser { get; set; }
 
     [DataMember]
-    public UserDenormalizedDto Reviewed { get; set; }
+    public UserSummaryDto ReviewedUser { get; set; }
 
     [DataMember]
     public string Comment { get; set; }

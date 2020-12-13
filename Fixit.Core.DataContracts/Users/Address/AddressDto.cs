@@ -21,7 +21,7 @@ namespace Fixit.Core.DataContracts.Users.Address
     public string Country { get; set; }
 
     [DataMember]
-    public string TelephoneNumber { get; set; }
+    public string PhoneNumber { get; set; }
 
     [DataMember]
     public long CreatedTimestampUtc { get; set; }

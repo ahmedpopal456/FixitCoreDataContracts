@@ -4,7 +4,7 @@ using System.Runtime.Serialization;
 namespace Fixit.Core.DataContracts.Users.Documents
 {
   [DataContract]
-  public class DocumentDenormalizedDto
+  public class DocumentSummaryDto
   {
     [DataMember]
     public Guid DocumentId { get; set; }

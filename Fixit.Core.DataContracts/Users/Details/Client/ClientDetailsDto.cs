@@ -3,7 +3,7 @@
 namespace Fixit.Core.DataContracts.Users.Details.Client
 {
   [DataContract]
-  public class ClientDto : IUserRoleDetailsDto
+  public class ClientDetailsDto : UserDetailsDto
   {
   }
 }

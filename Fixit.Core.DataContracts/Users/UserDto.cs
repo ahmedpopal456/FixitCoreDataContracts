@@ -5,7 +5,7 @@ using Fixit.Core.DataContracts.Users.Address;
 using Fixit.Core.DataContracts.Users.Details;
 using Fixit.Core.DataContracts.Users.Documents;
 using Fixit.Core.DataContracts.Users.Enums;
-using Fixit.Core.DataContracts.Users.Information;
+using Fixit.Core.DataContracts.Users.Ratings;
 
 namespace Fixit.Core.DataContracts.Users
 {
@@ -13,7 +13,7 @@ namespace Fixit.Core.DataContracts.Users
   public class UserDto
   {
     [DataMember]
-    public Guid id { get; set; }
+    public Guid Id { get; set; }
 
     [DataMember]
     public string UserPrincipalName { get; set; }
@@ -22,13 +22,16 @@ namespace Fixit.Core.DataContracts.Users
     public string ProfilePictureUrl { get; set; }
 
     [DataMember]
-    public string Name { get; set; }
+    public string FirstName { get; set; }
+
+    [DataMember]
+    public string LastName { get; set; }
 
     [DataMember]
     public UserState State { get; set; }
 
     [DataMember]
-    public Guid RatingId { get; set; }
+    public RatingsSummaryDto Rating { get; set; }
 
     [DataMember]
     public AddressDto Address { get; set; }
@@ -37,7 +40,7 @@ namespace Fixit.Core.DataContracts.Users
     public UserRole Role { get; set; }
 
     [DataMember]
-    public IUserRoleDetailsDto SpecificDetails { get; set; }
+    public UserDetailsDto SpecificDetails { get; set; }
 
     [DataMember]
     public Gender Gender { get; set; }
@@ -52,18 +55,12 @@ namespace Fixit.Core.DataContracts.Users
     public string TelephoneNumber { get; set; }
 
     [DataMember]
-    public IEnumerable<BankingInformationDto> BankingInformation { get; set; }
-
-    [DataMember]
-    public IEnumerable<PaymentInformationDto> Payments { get; set; }
-
-    [DataMember]
     public long CreatedTimestampsUtc { get; set; }
 
     [DataMember]
     public long UpdatedTimestampsUtc { get; set; }
 
     [DataMember]
-    public IEnumerable<DocumentDenormalizedDto> Documents { get; set; }
+    public IEnumerable<DocumentSummaryDto> Documents { get; set; }
   }
 }

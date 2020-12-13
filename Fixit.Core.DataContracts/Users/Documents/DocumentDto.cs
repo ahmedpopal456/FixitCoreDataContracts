@@ -8,7 +8,7 @@ namespace Fixit.Core.DataContracts.Users.Documents
   public class DocumentDto
   {
     [DataMember]
-    public Guid id { get; set; }
+    public Guid Id { get; set; }
 
     [DataMember]
     public string Name { get; set; }
@@ -23,10 +23,10 @@ namespace Fixit.Core.DataContracts.Users.Documents
     public string LicenseDateObtained { get; set; }
 
     [DataMember]
-    public string ImageUrl { get; set; }
+    public string AttachmentUrl { get; set; }
 
     [DataMember]
-    public string ExpirationDateOfTheLicense { get; set; }
+    public string LicenseExpirationTimestampUtc { get; set; }
 
     [DataMember]
     public long CreatedTimestampUtc { get; set; }

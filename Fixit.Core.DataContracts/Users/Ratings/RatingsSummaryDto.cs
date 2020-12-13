@@ -5,15 +5,15 @@ using System.Runtime.Serialization;
 namespace Fixit.Core.DataContracts.Users.Ratings
 {
   [DataContract]
-  public class RatingsWithAverageDto
+  public class RatingsSummaryDto
   {
     [DataMember]
-    public Guid id { get; set; }
+    public Guid Id { get; set; }
 
     [DataMember]
     public float AverageRating { get; set; }
 
     [DataMember]
-    public IEnumerable<RatingDenormalizedDto> Ratings { get; set; }
+    public IEnumerable<RatingSummaryDto> Ratings { get; set; }
   }
 }

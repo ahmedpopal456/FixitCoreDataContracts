@@ -4,16 +4,16 @@ using System.Runtime.Serialization;
 namespace Fixit.Core.DataContracts.Users.Ratings
 {
   [DataContract]
-  public class RatingDenormalizedDto
+  public class RatingSummaryDto
   {
     [DataMember]
-    public Guid id { get; set; }
+    public Guid Id { get; set; }
 
     [DataMember]
     public float Score { get; set; }
 
     [DataMember]
-    public UserDenormalizedDto CreatedBy { get; set; }
+    public UserSummaryDto CreatedByUser { get; set; }
 
     [DataMember]
     public string Comment { get; set; }

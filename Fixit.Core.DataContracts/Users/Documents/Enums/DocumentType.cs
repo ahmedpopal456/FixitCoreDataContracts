@@ -3,7 +3,6 @@
   public enum DocumentType
   {
     DriverLicense,
-    CraftsmanLicense,
-    Other
+    CraftsmanLicense
   }
 }
