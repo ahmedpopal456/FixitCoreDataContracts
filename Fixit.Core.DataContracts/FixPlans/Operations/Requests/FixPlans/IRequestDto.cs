@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Fixit.Core.DataContracts.FixPlans.Operations.Requests.FixPlans
 {
-  public interface ICreateRequestDto
+  public interface IRequestDto
   {
   }
 }

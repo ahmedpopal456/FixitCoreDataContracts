@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Fixit.Core.DataContracts.FixPlans.Operations.Requests.FixPlans
 {
-  class FixPhaseCreateRequestDto : ICreateRequestDto
+  class FixPhaseRequestDto : IRequestDto
   {
     public string Name { get; set; }
   }

@@ -8,7 +8,7 @@ using Fixit.Core.DataContracts.Users;
 
 namespace Fixit.Core.DataContracts.FixPlans.Operations.Requests.FixPlans
 {
-  public class FixPlanCreateRequestDto : ICreateRequestDto
+  public class FixPlanRequestDto : IRequestDto
   {
     public Guid FixId { get; set; }
 

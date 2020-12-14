@@ -6,7 +6,7 @@ using Fixit.Core.DataContracts.FixPlans.Phases.Cost;
 
 namespace Fixit.Core.DataContracts.FixPlans.Operations.Requests.FixPlans
 {
-  public class BillingCreateRequestDto : ICreateRequestDto
+  public class BillingRequestDto : IRequestDto
   {
     public float InitialCost { get; set; }
   }
