@@ -40,9 +40,6 @@ namespace Fixit.Core.DataContracts.Users
     public UserRole Role { get; set; }
 
     [DataMember]
-    public UserDetailsDto SpecificDetails { get; set; }
-
-    [DataMember]
     public Gender Gender { get; set; }
 
     [DataMember]
