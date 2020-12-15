@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Empower.Core.DataContracts.Adapters
+namespace Fixit.Core.DataContracts
 {
   public interface IFakeSeederAdapter<T> where T : class
   {
