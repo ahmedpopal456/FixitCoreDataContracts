@@ -4,7 +4,7 @@ using Fixit.Core.DataContracts.Users.Address;
 namespace Fixit.Core.DataContracts.Users.Operations.Profile
 {
   [DataContract]
-  public class UpdateUserProfileRequestDto
+  public class UserProfileUpdateRequestDto
   {
 
     [DataMember]
