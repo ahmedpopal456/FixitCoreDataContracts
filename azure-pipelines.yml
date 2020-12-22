@@ -96,8 +96,10 @@ jobs:
     inputs:
       command: restore
       projects: '$(buildProjects)'
+      feedsToUse: 'select'
       includeNuGetOrg: true
       nobuild: true
+      vstsFeed: '08d378fd-be72-4c80-9ce4-1a7c754efb98/e490ee0a-aeda-408b-b3f8-130d94b0c475'
   
   # Build
   - task: DotNetCoreCLI@2
