@@ -1,10 +1,11 @@
 ﻿using System.Runtime.Serialization;
+using Fixit.Core.Database.DataContracts;
 using Fixit.Core.DataContracts.Users.Address;
 
 namespace Fixit.Core.DataContracts.Users.Profile
 {
   [DataContract]
-  public class UserProfileInformationDto
+  public class UserProfileInformationDto : OperationStatus
   {
     [DataMember]
     public string FirstName { get; set; }
