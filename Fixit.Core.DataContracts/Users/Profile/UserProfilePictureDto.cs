@@ -1,5 +1,4 @@
 ﻿using System.Runtime.Serialization;
-using Fixit.Core.Database.DataContracts;
 
 namespace Fixit.Core.DataContracts.Users.Profile
 {
