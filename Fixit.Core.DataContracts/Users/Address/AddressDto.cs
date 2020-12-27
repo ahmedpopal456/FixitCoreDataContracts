@@ -22,11 +22,5 @@ namespace Fixit.Core.DataContracts.Users.Address
 
     [DataMember]
     public string PhoneNumber { get; set; }
-
-    [DataMember]
-    public long CreatedTimestampUtc { get; set; }
-
-    [DataMember]
-    public long UpdatedTimestampUtc { get; set; }
   }
 }
