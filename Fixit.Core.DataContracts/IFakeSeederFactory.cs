@@ -1,4 +1,4 @@
-﻿namespace Empower.Core.DataContracts.Adapters
+﻿namespace Fixit.Core.DataContracts
 {
   public interface IFakeSeederFactory
   {
