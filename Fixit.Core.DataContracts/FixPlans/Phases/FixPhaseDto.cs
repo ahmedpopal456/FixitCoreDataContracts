@@ -6,7 +6,7 @@ using Fixit.Core.DataContracts.FixPlans.Phases.Tasks;
 namespace Fixit.Core.DataContracts.FixPlans.Phases
 {
   [DataContract]
-  public class FixPhaseDto
+  public class FixPhaseDto : OperationStatus
   {
     [DataMember]
     public Guid Id { get; set; }

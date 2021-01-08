@@ -9,7 +9,7 @@ using Fixit.Core.DataContracts.Users;
 namespace Fixit.Core.DataContracts.FixPlans
 {
   [DataContract]
-  public class FixPlanDto
+  public class FixPlanDto : OperationStatus
   {
     [DataMember]
     public Guid Id { get; set; }

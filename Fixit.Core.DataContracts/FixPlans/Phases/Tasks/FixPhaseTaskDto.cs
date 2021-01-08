@@ -5,7 +5,7 @@ using Fixit.Core.DataContracts.FixPlans.Phases.Tasks.Enums;
 namespace Fixit.Core.DataContracts.FixPlans.Phases.Tasks
 {
   [DataContract]
-  public class FixPhaseTaskDto
+  public class FixPhaseTaskDto : OperationStatus
   {
     [DataMember]
     public Guid Id { get; set; }
