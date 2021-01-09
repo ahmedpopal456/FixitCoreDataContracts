@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Runtime.Serialization;
-using System.Text;
 using Fixit.Core.DataContracts.FixPlans.Phases;
 
 namespace Fixit.Core.DataContracts.FixPlans.Operations.Requests.FixPlans
