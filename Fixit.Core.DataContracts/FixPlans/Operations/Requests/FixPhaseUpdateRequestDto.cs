@@ -1,13 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Runtime.Serialization;
 using Fixit.Core.DataContracts.FixPlans.Phases.Enums;
-using Fixit.Core.DataContracts.FixPlans.Phases.Tasks;
 
 namespace Fixit.Core.DataContracts.FixPlans.Operations.Requests.FixPlans
 {
-  public class FixPhaseRequestDto
+  [DataContract]
+  public class FixPhaseUpdateRequestDto
   {
+    [DataMember]
     public PhaseStatuses Status { get; set; }
   }
 }
