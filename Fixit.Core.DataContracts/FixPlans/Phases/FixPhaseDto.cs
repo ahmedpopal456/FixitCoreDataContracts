@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Runtime.Serialization;
 using Fixit.Core.DataContracts.FixPlans.Phases.Enums;
 using Fixit.Core.DataContracts.FixPlans.Phases.Tasks;
@@ -18,6 +19,6 @@ namespace Fixit.Core.DataContracts.FixPlans.Phases
     public PhaseStatuses Status { get; set; }
 
     [DataMember]
-    public FixPhaseTaskDto Tasks { get; set; }
+    public IEnumerable<FixPhaseTaskDto> Tasks { get; set; }
   }
 }

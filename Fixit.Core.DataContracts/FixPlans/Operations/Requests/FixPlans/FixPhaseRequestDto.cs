@@ -8,8 +8,6 @@ namespace Fixit.Core.DataContracts.FixPlans.Operations.Requests.FixPlans
 {
   public class FixPhaseRequestDto
   {
-    public string Name { get; set; }
     public PhaseStatuses Status { get; set; }
-    public FixPhaseTaskDto Tasks { get; set; }
   }
 }

@@ -16,14 +16,10 @@ namespace Fixit.Core.DataContracts.FixPlans.Operations.Requests.FixPlans
     
     public float TotalCost { get; set; }
 
-    
     public FixPlanBillingDetailsDto BillingDetails { get; set; }
 
     public IEnumerable<FixPhaseDto> Phases { get; set; }
 
     public UserSummaryDto CreatedByCraftsman { get; set; }
-
-    //public FixPlanProposalStates ProposalState { get; set; }
-    //public Guid ActivePhaseId { get; set; }
   }
 }
