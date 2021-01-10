@@ -17,6 +17,9 @@ namespace Fixit.Core.DataContracts.FixPlans.Operations.Requests.FixPlans
     public bool IsBookmarked { get; set; }
 
     [DataMember]
+    public long CreatedTimestampUtc { get; set; }
+
+    [DataMember]
     public float TotalCost { get; set; }
 
     [DataMember]

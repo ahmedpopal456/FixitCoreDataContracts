@@ -12,5 +12,8 @@ namespace Fixit.Core.DataContracts.FixPlans.Operations.Requests.FixPlans
       
       [DataMember]
       public IEnumerable<FixPhaseDto> Phases { get; set; }
+
+      [DataMember]
+      public long UpdatedTimestampUtc { get; set; }
   }
 }

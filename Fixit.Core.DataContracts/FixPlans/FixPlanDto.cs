@@ -21,6 +21,9 @@ namespace Fixit.Core.DataContracts.FixPlans
     public long CreatedTimestampUtc { get; set; }
 
     [DataMember]
+    public long UpdatedTimestampUtc { get; set; }
+
+    [DataMember]
     public bool IsBookmarked { get; set; }
 
     [DataMember]
