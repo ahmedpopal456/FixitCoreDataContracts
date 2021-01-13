@@ -4,7 +4,7 @@ using Fixit.Core.DataContracts.FixPlans.Phases.Tasks.Enums;
 namespace Fixit.Core.DataContracts.FixPlans.Operations.Requests.FixPlans
 {
   [DataContract]
-  public class FixTaskUpdateRequestDto
+  public class FixTaskStatusUpdateRequestDto
   {
     [DataMember]
     public TaskStatuses Status { get; set; }
