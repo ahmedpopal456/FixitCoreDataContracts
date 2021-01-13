@@ -20,6 +20,9 @@ namespace Fixit.Core.DataContracts.FixPlans.Operations.Requests.FixPlans
     public long CreatedTimestampUtc { get; set; }
 
     [DataMember]
+    public long UpdatedTimeStampUtc { get; set; }
+
+    [DataMember]
     public float TotalCost { get; set; }
 
     [DataMember]
