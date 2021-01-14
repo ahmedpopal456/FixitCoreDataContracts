@@ -1,10 +1,9 @@
 ﻿using System.Runtime.Serialization;
-using Fixit.Core.DataContracts;
 using Fixit.Core.DataContracts.Users.Enums;
 
 namespace Fixit.Core.DataContracts.Users.Operations.Account
 {
-  [DataContract]
+  [DataContract, KnownType(typeof(OperationStatus))]
   public class UserAccountRoleResponseDto : OperationStatus
   {
     [DataMember]

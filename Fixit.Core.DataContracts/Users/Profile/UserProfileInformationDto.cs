@@ -3,7 +3,7 @@ using Fixit.Core.DataContracts.Users.Address;
 
 namespace Fixit.Core.DataContracts.Users.Profile
 {
-  [DataContract]
+  [DataContract, KnownType(typeof(OperationStatus))]
   public class UserProfileInformationDto : OperationStatus
   {
     [DataMember]
