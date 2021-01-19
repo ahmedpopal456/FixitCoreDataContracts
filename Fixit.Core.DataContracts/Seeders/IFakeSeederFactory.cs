@@ -1,4 +1,4 @@
-﻿namespace Fixit.Core.DataContracts
+﻿namespace Fixit.Core.DataContracts.Seeders
 {
   public interface IFakeSeederFactory
   {
