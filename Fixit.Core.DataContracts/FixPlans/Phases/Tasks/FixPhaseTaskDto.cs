@@ -17,9 +17,6 @@ namespace Fixit.Core.DataContracts.FixPlans.Phases.Tasks
     public string Description { get; set; }
 
     [DataMember]
-    public int Order { get; set; }
-
-    [DataMember]
     public TaskStatuses Status { get; set; }
   }
 }
