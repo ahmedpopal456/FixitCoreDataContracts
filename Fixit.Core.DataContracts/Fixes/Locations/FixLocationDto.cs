@@ -3,7 +3,7 @@
 namespace Fixit.Core.DataContracts.Fixes.Locations
 {
   [DataContract]
-  public class FixLocationDto
+  public class FixLocationDto : OperationStatus
   {
     [DataMember]
     public string Address { get; set; }

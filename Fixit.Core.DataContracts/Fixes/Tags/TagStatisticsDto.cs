@@ -5,7 +5,7 @@ namespace Fixit.Core.DataContracts.Fixes.Tags
   /// <summary>
   /// TODO: Fill out once use is clearly defined
   /// </summary>
-  public class TagStatisticsDto
+  public class TagStatisticsDto : OperationStatus
   {
     [DataMember]
     public long CreatedTimestampUtc { get; set; }

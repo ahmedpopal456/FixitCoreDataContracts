@@ -4,7 +4,7 @@ using System.Runtime.Serialization;
 namespace Fixit.Core.DataContracts.Fixes.Tags
 {
   [DataContract]
-  public class TagDto
+  public class TagDto : OperationStatus
   {
     [DataMember]
     public Guid Id { get; set; }
