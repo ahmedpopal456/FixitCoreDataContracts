@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Fixit.Core.DataContracts
+namespace Fixit.Core.DataContracts.Seeders
 {
   public interface IFakeSeederAdapter<T> where T : class
   {
