@@ -1,10 +1,14 @@
-﻿using System.Runtime.Serialization;
+﻿using System;
+using System.Runtime.Serialization;
 
 namespace Fixit.Core.DataContracts.Fixes.Locations
 {
   [DataContract]
   public class FixLocationDto : OperationStatus
   {
+    [DataMember]
+    public Guid Id { get; set; }
+
     [DataMember]
     public string Address { get; set; }
 
@@ -16,5 +20,14 @@ namespace Fixit.Core.DataContracts.Fixes.Locations
 
     [DataMember]
     public string PostalCode { get; set; }
+
+    [DataMember]
+    public string ClientId { get; set; }
+
+    [DataMember]
+    public string LastUsedTimeStampUtc { get; set; }
+
+    [DataMember]
+    public string Country { get; set; }
   }
 }
