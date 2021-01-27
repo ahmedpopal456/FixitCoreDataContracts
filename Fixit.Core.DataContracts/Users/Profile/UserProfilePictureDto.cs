@@ -2,7 +2,7 @@
 
 namespace Fixit.Core.DataContracts.Users.Profile
 {
-  [DataContract]
+  [DataContract, KnownType(typeof(OperationStatus))]
   public class UserProfilePictureDto : OperationStatus
   {
     [DataMember]
