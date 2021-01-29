@@ -7,6 +7,9 @@ namespace Fixit.Core.DataContracts.Users.Operations.Account
   public class UserAccountCreateRequestDto : OperationStatus
   {
     [DataMember]
+    public string Id { get; set; }
+
+    [DataMember]
     public string FirstName { get; set; }
 
     [DataMember]
