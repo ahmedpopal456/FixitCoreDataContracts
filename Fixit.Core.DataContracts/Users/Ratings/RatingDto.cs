@@ -1,10 +1,15 @@
-﻿using System.Runtime.Serialization;
+﻿using System;
+using System.Runtime.Serialization;
+using Fixit.Core.DataContracts.Users.Enums;
 
 namespace Fixit.Core.DataContracts.Users.Ratings
 {
-  [DataContract]
-  public class RatingDto
+  [DataContract, KnownType(typeof(OperationStatus))]
+  public class RatingDto : OperationStatus
   {
+    [DataMember]
+    public Guid Id { get; set; }
+
     [DataMember]
     public float Score { get; set; }
 
@@ -18,6 +23,12 @@ namespace Fixit.Core.DataContracts.Users.Ratings
     public string Comment { get; set; }
 
     [DataMember]
-    public long CreateTimestampUtc { get; set; }
+    public long CreatedTimestampUtc { get; set; }
+
+    [DataMember]
+    public long UpdatedTimestampUtc { get; set; }
+
+    [DataMember]
+    public RatingType Type { get; set; }
   }
 }

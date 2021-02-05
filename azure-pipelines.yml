@@ -82,7 +82,7 @@ jobs:
     displayName: 'Use NuGet 4.4.1'
     inputs:
       versionSpec: '4.4.1'
-  
+
   # Specify sdk Version
   - task: UseDotNet@2
     displayName: 'Use sdk 3.1.102'
@@ -100,7 +100,18 @@ jobs:
       includeNuGetOrg: true
       nobuild: true
       vstsFeed: '08d378fd-be72-4c80-9ce4-1a7c754efb98/e490ee0a-aeda-408b-b3f8-130d94b0c475'
-  
+
+  # Prepare Sonar Cloud Analysis
+  - task: SonarCloudPrepare@1
+    inputs:
+      SonarCloud: 'fixit-sonarcloud'
+      organization: 'fixit'
+      scannerMode: 'MSBuild'
+      projectKey: 'fixit-app_FixitCoreDataContracts'
+      projectName: 'FixitCoreDataContracts'
+      extraProperties: |
+        sonar.exclusions=**/obj/**,**/*.dll
+
   # Build
   - task: DotNetCoreCLI@2
     displayName: Build
@@ -108,6 +119,15 @@ jobs:
       projects: '$(buildProjects)'
       arguments: '--configuration $(buildConfiguration) --no-restore'
   
+
+  # Run Sonar Cloud Analysis
+  - task: SonarCloudAnalyze@1
+
+  # Publish Sonar Cloud Report 
+  - task: SonarCloudPublish@1
+    inputs:
+      pollingTimeoutSec: '300'
+
   # Pack
   - task: DotNetCoreCLI@2
     displayName: "Pack"
@@ -120,7 +140,6 @@ jobs:
       versioningScheme: 'byEnvVar'
       versionEnvVar: BUILD.BUILDNUMBER
 
-  
   # Publish to Feed
   # allowPackageConflicts allows us to build the same version and not throw an error when trying to push, instead it just ingores the latest package unless the version changes
   # publishVstsFeed is fix-management-system Feed
@@ -136,7 +155,7 @@ jobs:
       versioningScheme: 'byEnvVar'
       versionEnvVar: BUILD.BUILDNUMBER
       allowPackageConflicts: true
-  
+
   # Publish PDBs
   - task: PublishSymbols@2
     displayName: 'Publish symbols path'

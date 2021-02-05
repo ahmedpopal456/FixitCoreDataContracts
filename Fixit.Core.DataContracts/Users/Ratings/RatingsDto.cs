@@ -4,8 +4,8 @@ using System.Runtime.Serialization;
 
 namespace Fixit.Core.DataContracts.Users.Ratings
 {
-  [DataContract]
-  public class RatingsSummaryDto
+  [DataContract, KnownType(typeof(OperationStatus))]
+  public class RatingsDto : OperationStatus
   {
     [DataMember]
     public Guid Id { get; set; }
@@ -14,6 +14,9 @@ namespace Fixit.Core.DataContracts.Users.Ratings
     public float AverageRating { get; set; }
 
     [DataMember]
-    public IEnumerable<RatingSummaryDto> Ratings { get; set; }
+    public IEnumerable<RatingDto> Ratings { get; set; }
+
+    [DataMember]
+    public UserSummaryDto RatingsOfUser { get; set; }
   }
 }
