@@ -4,8 +4,7 @@ using System.Runtime.Serialization;
 
 namespace Fixit.Core.DataContracts.Users.Ratings
 {
-  [DataContract, KnownType(typeof(OperationStatus))]
-  public class RatingsDto : OperationStatus
+  public class RatingsDto
   {
     [DataMember]
     public Guid Id { get; set; }

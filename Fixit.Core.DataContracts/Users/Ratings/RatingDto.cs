@@ -4,8 +4,7 @@ using Fixit.Core.DataContracts.Users.Enums;
 
 namespace Fixit.Core.DataContracts.Users.Ratings
 {
-  [DataContract, KnownType(typeof(OperationStatus))]
-  public class RatingDto : OperationStatus
+  public class RatingDto
   {
     [DataMember]
     public Guid Id { get; set; }
