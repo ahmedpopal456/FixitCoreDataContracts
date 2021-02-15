@@ -1,19 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
+using Fixit.Core.DataContracts.Fixes.Cost;
 using Fixit.Core.DataContracts.Fixes.Details;
 using Fixit.Core.DataContracts.Fixes.Enums;
 using Fixit.Core.DataContracts.Fixes.Files;
 using Fixit.Core.DataContracts.Fixes.Locations;
 using Fixit.Core.DataContracts.Fixes.Schedule;
 using Fixit.Core.DataContracts.Fixes.Tags;
+using Fixit.Core.DataContracts.FixPlans;
 using Fixit.Core.DataContracts.Users;
 
-namespace Fixit.Core.DataContracts.Fixes.Operations.Requests
+namespace Fixit.Core.DataContracts.Fixes.Operations.Responses
 {
   [DataContract]
-  public class FixUpdateRequestDto : OperationStatus
+  public class FixResponseDto : OperationStatus
   {
+
+    [DataMember]
+    public UserSummaryDto AssignedToCraftsman { get; set; }
 
     [DataMember]
     public IEnumerable<TagDto> Tags { get; set; }
@@ -31,10 +36,36 @@ namespace Fixit.Core.DataContracts.Fixes.Operations.Requests
     public IEnumerable<FixScheduleRangeDto> Schedule { get; set; }
 
     [DataMember]
+    public FixCostRangeDto ClientEstimatedCost { get; set; }
+
+    [DataMember]
+    public float SystemCalculatedCost { get; set; }
+
+    [DataMember]
+    public FixCostEstimationDto CraftsmanEstimatedCost { get; set; }
+
+    [DataMember]
+    public long CreatedTimestampUtc { get; set; }
+
+    [DataMember]
+    public UserSummaryDto CreatedByClient { get; set; }
+
+    [DataMember]
+    public long UpdatedTimestampUtc { get; set; }
+
+    [DataMember]
     public UserSummaryDto UpdatedByUser { get; set; }
 
     [DataMember]
     public FixStatuses Status { get; set; }
 
+    [DataMember]
+    public Guid ActivityHistoryId { get; set; }
+
+    [DataMember]
+    public Guid BillingActivityId { get; set; }
+
+    [DataMember]
+    public FixPlanSummaryDto PlanSummary { get; set; }
   }
 }

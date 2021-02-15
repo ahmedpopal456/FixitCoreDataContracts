@@ -6,6 +6,7 @@ using Fixit.Core.DataContracts.Fixes.Enums;
 using Fixit.Core.DataContracts.Fixes.Files;
 using Fixit.Core.DataContracts.Fixes.Locations;
 using Fixit.Core.DataContracts.Fixes.Schedule;
+using Fixit.Core.DataContracts.Fixes.Tags;
 using Fixit.Core.DataContracts.Users;
 
 namespace Fixit.Core.DataContracts.Fixes.Operations.Requests
@@ -13,8 +14,9 @@ namespace Fixit.Core.DataContracts.Fixes.Operations.Requests
   [DataContract]
   public class FixCreateRequestDto : OperationStatus
   {
+
     [DataMember]
-    public Guid Id { get; set; }
+    public IEnumerable<TagDto> Tags { get; set; }
 
     [DataMember]
     public IEnumerable<FixDetailsDto> Details { get; set; }
@@ -29,13 +31,7 @@ namespace Fixit.Core.DataContracts.Fixes.Operations.Requests
     public IEnumerable<FixScheduleRangeDto> Schedule { get; set; }
 
     [DataMember]
-    public long CreatedTimestampUtc { get; set; }
-
-    [DataMember]
     public UserSummaryDto CreatedByClient { get; set; }
-
-    [DataMember]
-    public long UpdatedTimestampUtc { get; set; }
 
     [DataMember]
     public UserSummaryDto UpdatedByUser { get; set; }

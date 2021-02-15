@@ -9,8 +9,6 @@ namespace Fixit.Core.DataContracts.Fixes.Operations.Requests
   [DataContract]
   public class FixUpdateAssignRequestDto : OperationStatus
   {
-    [DataMember]
-    public Guid Id { get; set; }
 
     [DataMember]
     public UserSummaryDto AssignedToCraftsman { get; set; }
@@ -23,9 +21,6 @@ namespace Fixit.Core.DataContracts.Fixes.Operations.Requests
 
     [DataMember]
     public FixCostEstimationDto CraftsmanEstimatedCost { get; set; }
-
-    [DataMember]
-    public long UpdatedTimestampUtc { get; set; }
 
     [DataMember]
     public UserSummaryDto UpdatedByUser { get; set; }
