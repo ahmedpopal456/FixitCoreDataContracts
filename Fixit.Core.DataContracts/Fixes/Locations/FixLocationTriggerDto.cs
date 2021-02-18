@@ -2,8 +2,7 @@
 
 namespace Fixit.Core.DataContracts.Fixes.Locations
 {
-  [DataContract]
-  public class FixLocationDto
+  public class FixLocationTriggerDto: OperationStatus
   {
     [DataMember]
     public string Address { get; set; }
@@ -16,5 +15,8 @@ namespace Fixit.Core.DataContracts.Fixes.Locations
 
     [DataMember]
     public string PostalCode { get; set; }
+
+    [DataMember]
+    public string LastUsedTimeStampUtc { get; set; }
   }
 }
