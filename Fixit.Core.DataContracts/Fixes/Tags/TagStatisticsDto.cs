@@ -12,5 +12,14 @@ namespace Fixit.Core.DataContracts.Fixes.Tags
 
     [DataMember]
     public long UpdatedTimeStampUtc { get; set; }
+
+    [DataMember]
+    public long TotalFixesCount { get; set; }
+
+    [DataMember]
+    public long CompletedFixesCount { get; set; }
+
+    [DataMember]
+    public long PercentageUsage { get; set; }
   }
 }
