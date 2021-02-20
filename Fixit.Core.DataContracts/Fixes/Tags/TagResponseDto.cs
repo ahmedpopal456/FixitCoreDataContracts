@@ -3,7 +3,7 @@ using System.Runtime.Serialization;
 
 namespace Fixit.Core.DataContracts.Fixes.Tags
 {
-  public class TagTriggerDto: OperationStatus
+  public class TagResponseDto: OperationStatus
   {
     [DataMember]
     public Guid Id { get; set; }
