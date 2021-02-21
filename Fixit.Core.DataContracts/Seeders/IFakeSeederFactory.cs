@@ -1,7 +1,10 @@
-﻿namespace Fixit.Core.DataContracts.Seeders
+﻿using System.Collections.Generic;
+
+namespace Fixit.Core.DataContracts.Seeders
 {
   public interface IFakeSeederFactory
   {
-    IFakeSeederAdapter<T> CreateFakeSeeder<T>() where T : class;
+    public IList<T> CreateSeederFactory<T>(IFakeSeederAdapter<T> fakeSeederAdapter) where T : class;
+
   }
 }
