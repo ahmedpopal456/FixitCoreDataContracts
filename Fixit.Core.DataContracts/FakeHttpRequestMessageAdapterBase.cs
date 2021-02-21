@@ -4,7 +4,6 @@ using Newtonsoft.Json;
 
 namespace Fixit.Core.DataContracts
 {
-  // Move to DataContracts
   /// <summary>
   /// <para>Provides methods for converting btween any Object type T and any <see cref="HttpRequest"/> type.</para>
   /// <para>Should only be used for unit test purposes.</para>

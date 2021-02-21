@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Runtime.Serialization;
+using Fixit.Core.DataContracts.Users.Enums;
 
 namespace Fixit.Core.DataContracts.Users
 {
@@ -14,5 +15,14 @@ namespace Fixit.Core.DataContracts.Users
 
     [DataMember]
     public string LastName { get; set; }
+
+    [DataMember]
+    public string ProfilePictureUrl { get; set; }
+
+    [DataMember]
+    public UserRole Role { get; set; }
+
+    [DataMember]
+    public UserStatusDto Status { get; set; }
   }
 }
