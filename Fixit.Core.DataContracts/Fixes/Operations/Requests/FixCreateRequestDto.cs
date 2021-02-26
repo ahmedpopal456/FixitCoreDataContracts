@@ -7,6 +7,7 @@ using Fixit.Core.DataContracts.Fixes.Files;
 using Fixit.Core.DataContracts.Fixes.Locations;
 using Fixit.Core.DataContracts.Fixes.Schedule;
 using Fixit.Core.DataContracts.Fixes.Tags;
+using Fixit.Core.DataContracts.Seeders;
 using Fixit.Core.DataContracts.Users;
 
 namespace Fixit.Core.DataContracts.Fixes.Operations.Requests

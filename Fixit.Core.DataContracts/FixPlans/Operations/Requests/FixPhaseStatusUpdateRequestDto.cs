@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Runtime.Serialization;
 using Fixit.Core.DataContracts.FixPlans.Phases.Enums;
+using Fixit.Core.DataContracts.Seeders;
 
 namespace Fixit.Core.DataContracts.FixPlans.Operations.Requests.FixPlans
 {

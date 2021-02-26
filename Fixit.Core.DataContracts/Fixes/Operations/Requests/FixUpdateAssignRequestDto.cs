@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.Serialization;
 using Fixit.Core.DataContracts.Fixes.Cost;
 using Fixit.Core.DataContracts.Fixes.Enums;
+using Fixit.Core.DataContracts.Seeders;
 using Fixit.Core.DataContracts.Users;
 
 namespace Fixit.Core.DataContracts.Fixes.Operations.Requests
