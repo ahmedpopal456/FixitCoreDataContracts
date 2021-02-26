@@ -1,10 +1,12 @@
-﻿using System.Runtime.Serialization;
+﻿using System.Collections.Generic;
+using System.Runtime.Serialization;
+using Fixit.Core.DataContracts.Seeders;
 using Fixit.Core.DataContracts.Users.Enums;
 
 namespace Fixit.Core.DataContracts.Users.Operations.Account
 {
   [DataContract, KnownType(typeof(OperationStatus))]
-  public class UserAccountCreateRequestDto : OperationStatus
+  public class UserAccountCreateRequestDto : OperationStatus, IFakeSeederAdapter<UserAccountCreateRequestDto>
   {
     [DataMember]
     public string Id { get; set; }
@@ -20,5 +22,28 @@ namespace Fixit.Core.DataContracts.Users.Operations.Account
 
     [DataMember]
     public string UserPrincipalName { get; set; }
+
+    #region IFakeSeederAdapter
+    public IList<UserAccountCreateRequestDto> SeedFakeDtos()
+    {
+      UserAccountCreateRequestDto firstUserAccountToCreate = new UserAccountCreateRequestDto
+      {
+        Id = "some_id",
+        FirstName = "John",
+        LastName = "Doe",
+        Role = UserRole.Client,
+        UserPrincipalName = "johnDoe@test.com"
+
+      };
+
+      UserAccountCreateRequestDto secondUserAccountToCreate = null;
+
+      return new List<UserAccountCreateRequestDto>
+      {
+        firstUserAccountToCreate,
+        secondUserAccountToCreate
+      };
+    }
+    #endregion
   }
 }

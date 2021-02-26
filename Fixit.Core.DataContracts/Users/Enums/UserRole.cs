@@ -3,6 +3,7 @@
   public enum UserRole
   {
     Client,
-    Craftsman
+    Craftsman,
+    CustomerSupport
   }
 }
