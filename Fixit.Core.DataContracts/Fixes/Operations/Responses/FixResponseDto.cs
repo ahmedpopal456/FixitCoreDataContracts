@@ -16,6 +16,8 @@ namespace Fixit.Core.DataContracts.Fixes.Operations.Responses
   [DataContract]
   public class FixResponseDto : OperationStatus
   {
+    [DataMember]
+    public Guid Id { get; set; }
 
     [DataMember]
     public UserSummaryDto AssignedToCraftsman { get; set; }
