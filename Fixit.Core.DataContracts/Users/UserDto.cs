@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 using Fixit.Core.DataContracts.Users.Address;
-using Fixit.Core.DataContracts.Users.Details;
 using Fixit.Core.DataContracts.Users.Documents;
 using Fixit.Core.DataContracts.Users.Enums;
-using Fixit.Core.DataContracts.Users.Ratings;
+using Fixit.Core.DataContracts.Users.Skills;
 
 namespace Fixit.Core.DataContracts.Users
 {
@@ -47,6 +46,9 @@ namespace Fixit.Core.DataContracts.Users
 
     [DataMember]
     public string TelephoneNumber { get; set; }
+
+    [DataMember]
+    public SkillsDto Skills { get; set; }
 
     [DataMember]
     public long CreatedTimestampsUtc { get; set; }
