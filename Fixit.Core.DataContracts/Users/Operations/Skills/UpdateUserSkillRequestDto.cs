@@ -8,21 +8,24 @@ namespace Fixit.Core.DataContracts.Users.Operations
   public class UpdateUserSkillRequestDto : OperationStatus, IFakeSeederAdapter<UpdateUserSkillRequestDto>
   {
     [DataMember]
-    public string Name { get; set; }
+    public Guid UserId { get; set; }
 
     [DataMember]
-    public long AttributedAtTimeStampUtc { get; set; }
+    public string SkillName { get; set; }
 
     [DataMember]
-    public long ExpiredAtTimeStampUtc { get; set; }
+    public long AttributedAtTimestampUtc { get; set; }
+
+    [DataMember]
+    public long ExpiresTimestampUtc { get; set; }
 
     public IList<UpdateUserSkillRequestDto> SeedFakeDtos()
     {
       UpdateUserSkillRequestDto firstSkill = new UpdateUserSkillRequestDto
       {
-        Name = "Skill 1",
-        AttributedAtTimeStampUtc = DateTimeOffset.Now.ToUnixTimeSeconds(),
-        ExpiredAtTimeStampUtc = DateTimeOffset.Now.ToUnixTimeSeconds()
+        SkillName = "Skill 1",
+        AttributedAtTimestampUtc = DateTimeOffset.Now.ToUnixTimeSeconds(),
+        ExpiresTimestampUtc = DateTimeOffset.Now.ToUnixTimeSeconds()
       };
 
       UpdateUserSkillRequestDto secondSkill = null;
