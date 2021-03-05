@@ -12,9 +12,9 @@ namespace Fixit.Core.DataContracts.Users.Skills
     public string Name { get; set; }
 
     [DataMember]
-    public long AttributedAtTimeStampUtc { get; set; }
+    public long AttributedAtTimestampUtc { get; set; }
 
     [DataMember]
-    public long ExpiresAtTimeStampUtc { get; set; }
+    public long ExpiresAtTimestampUtc { get; set; }
   }
 }
