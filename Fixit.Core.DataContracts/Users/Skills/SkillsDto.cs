@@ -15,6 +15,6 @@ namespace Fixit.Core.DataContracts.Users.Skills
     public long AttributedAtTimeStampUtc { get; set; }
 
     [DataMember]
-    public long ExpiredAtTimeStampUtc { get; set; }
+    public long ExpiresAtTimeStampUtc { get; set; }
   }
 }
