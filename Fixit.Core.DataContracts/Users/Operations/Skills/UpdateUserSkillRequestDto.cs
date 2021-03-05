@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 using Fixit.Core.DataContracts.Seeders;
+using Fixit.Core.DataContracts.Users.Skills;
 
 namespace Fixit.Core.DataContracts.Users.Operations
 {
@@ -11,10 +12,7 @@ namespace Fixit.Core.DataContracts.Users.Operations
     public Guid UserId { get; set; }
 
     [DataMember]
-    public Guid SkillId { get; set; }
-
-    [DataMember]
-    public string SkillName { get; set; }
+    public SkillDto Skill { get; set; }
 
     [DataMember]
     public long AttributedAtTimestampUtc { get; set; }
@@ -26,9 +24,9 @@ namespace Fixit.Core.DataContracts.Users.Operations
     {
       UpdateUserSkillRequestDto firstSkill = new UpdateUserSkillRequestDto
       {
-        SkillName = "Skill 1",
+        Skill = new SkillDto { Id = Guid.NewGuid(), Name = "Hello" },
         AttributedAtTimestampUtc = DateTimeOffset.Now.ToUnixTimeSeconds(),
-        ExpiresTimestampUtc = DateTimeOffset.Now.ToUnixTimeSeconds()
+        ExpiresAtTimestampUtc = DateTimeOffset.Now.ToUnixTimeSeconds()
       };
 
       UpdateUserSkillRequestDto secondSkill = null;

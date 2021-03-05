@@ -48,7 +48,7 @@ namespace Fixit.Core.DataContracts.Users
     public string TelephoneNumber { get; set; }
 
     [DataMember]
-    public IEnumerable<SkillsDto> Skills { get; set; }
+    public IEnumerable<SkillDto> Skills { get; set; }
 
     [DataMember]
     public long CreatedTimestampsUtc { get; set; }
