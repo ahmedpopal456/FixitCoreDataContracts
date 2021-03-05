@@ -4,13 +4,10 @@ using Fixit.Core.DataContracts.Seeders;
 
 namespace Fixit.Core.DataContracts.Users.Operations
 {
-  public class UpdateUserSkillRequestDto : OperationStatus, IFakeSeederAdapter<UpdateUserSkillRequestDto>
+  public class UpdateSkillRequestDto : OperationStatus, IFakeSeederAdapter<UpdateSkillRequestDto>
   {
     [DataMember]
     public string Name { get; set; }
-
-    [DataMember]
-    public string Category { get; set; }
 
     [DataMember]
     public long AttributedAtTimeStampUtc { get; set; }
@@ -18,17 +15,16 @@ namespace Fixit.Core.DataContracts.Users.Operations
     [DataMember]
     public long ExpiredAtTimeStampUtc { get; set; }
 
-    public IList<UpdateUserSkillRequestDto> SeedFakeDtos()
+    public IList<UpdateSkillRequestDto> SeedFakeDtos()
     {
-      UpdateUserSkillRequestDto firstSkill = new UpdateUserSkillRequestDto
+      UpdateSkillRequestDto firstSkill = new UpdateSkillRequestDto
       {
-        Category = "New",
         Name = "Skill 1",
       };
 
-      UpdateUserSkillRequestDto secondSkill = null;
+      UpdateSkillRequestDto secondSkill = null;
 
-      return new List<UpdateUserSkillRequestDto>
+      return new List<UpdateSkillRequestDto>
       {
         firstSkill,
         secondSkill
