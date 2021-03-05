@@ -11,13 +11,16 @@ namespace Fixit.Core.DataContracts.Users.Operations
     public Guid UserId { get; set; }
 
     [DataMember]
+    public Guid SkillId { get; set; }
+
+    [DataMember]
     public string SkillName { get; set; }
 
     [DataMember]
     public long AttributedAtTimestampUtc { get; set; }
 
     [DataMember]
-    public long ExpiresTimestampUtc { get; set; }
+    public long ExpiresAtTimestampUtc { get; set; }
 
     public IList<UpdateUserSkillRequestDto> SeedFakeDtos()
     {
