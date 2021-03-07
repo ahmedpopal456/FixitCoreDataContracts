@@ -22,7 +22,7 @@ namespace Fixit.Core.DataContracts.Users.Operations.Account
     public UserRole Role { get; set; }
 
     [DataMember]
-    public SkillDto Skills { get; set; }
+    public IEnumerable<SkillDto> Skills { get; set; }
 
     [DataMember]
     public string UserPrincipalName { get; set; }
