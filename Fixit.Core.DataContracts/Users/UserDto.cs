@@ -45,6 +45,9 @@ namespace Fixit.Core.DataContracts.Users
     public UserStatusDto Status { get; set; }
 
     [DataMember]
+    public UserAvailability Availability { get; set; }
+
+    [DataMember]
     public string TelephoneNumber { get; set; }
 
     [DataMember]
