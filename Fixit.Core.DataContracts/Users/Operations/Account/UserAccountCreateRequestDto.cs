@@ -2,6 +2,7 @@
 using System.Runtime.Serialization;
 using Fixit.Core.DataContracts.Seeders;
 using Fixit.Core.DataContracts.Users.Enums;
+using Fixit.Core.DataContracts.Users.Skills;
 
 namespace Fixit.Core.DataContracts.Users.Operations.Account
 {
@@ -19,6 +20,9 @@ namespace Fixit.Core.DataContracts.Users.Operations.Account
 
     [DataMember]
     public UserRole Role { get; set; }
+
+    [DataMember]
+    public SkillDto Skills { get; set; }
 
     [DataMember]
     public string UserPrincipalName { get; set; }
