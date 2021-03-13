@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Runtime.Serialization;
 using Fixit.Core.DataContracts.Seeders;
 using Fixit.Core.DataContracts.Users.Enums;
@@ -36,8 +37,11 @@ namespace Fixit.Core.DataContracts.Users.Operations.Account
         FirstName = "John",
         LastName = "Doe",
         Role = UserRole.Client,
-        UserPrincipalName = "johnDoe@test.com"
-
+        UserPrincipalName = "johnDoe@test.com",
+        Skills = new List<SkillDto>
+        {
+          new SkillDto { Id = Guid.NewGuid(), Name = "Hello" }
+        }   
       };
 
       UserAccountCreateRequestDto secondUserAccountToCreate = null;
