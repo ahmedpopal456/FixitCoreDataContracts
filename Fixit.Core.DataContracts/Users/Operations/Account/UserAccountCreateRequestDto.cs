@@ -36,7 +36,7 @@ namespace Fixit.Core.DataContracts.Users.Operations.Account
         Id = "some_id",
         FirstName = "John",
         LastName = "Doe",
-        Role = UserRole.Client,
+        Role = UserRole.Craftsman,
         UserPrincipalName = "johnDoe@test.com",
         Skills = new List<SkillDto>
         {
