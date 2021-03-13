@@ -1,7 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Runtime.Serialization;
 using Fixit.Core.DataContracts.Seeders;
 using Fixit.Core.DataContracts.Users.Enums;
+using Fixit.Core.DataContracts.Users.Skills;
 
 namespace Fixit.Core.DataContracts.Users.Operations.Account
 {
@@ -21,6 +23,9 @@ namespace Fixit.Core.DataContracts.Users.Operations.Account
     public UserRole Role { get; set; }
 
     [DataMember]
+    public IEnumerable<SkillDto> Skills { get; set; }
+
+    [DataMember]
     public string UserPrincipalName { get; set; }
 
     #region IFakeSeederAdapter
@@ -31,9 +36,12 @@ namespace Fixit.Core.DataContracts.Users.Operations.Account
         Id = "some_id",
         FirstName = "John",
         LastName = "Doe",
-        Role = UserRole.Client,
-        UserPrincipalName = "johnDoe@test.com"
-
+        Role = UserRole.Craftsman,
+        UserPrincipalName = "johnDoe@test.com",
+        Skills = new List<SkillDto>
+        {
+          new SkillDto { Id = Guid.NewGuid(), Name = "Hello" }
+        }   
       };
 
       UserAccountCreateRequestDto secondUserAccountToCreate = null;
