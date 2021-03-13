@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
-using Fixit.Core.DataContracts.Fixes.Categories;
+using Fixit.Core.DataContracts.Classifications;
 using Fixit.Core.DataContracts.Fixes.Cost;
 using Fixit.Core.DataContracts.Fixes.Details;
 using Fixit.Core.DataContracts.Fixes.Files;
 using Fixit.Core.DataContracts.Fixes.Locations;
 using Fixit.Core.DataContracts.Fixes.Schedule;
-using Fixit.Core.DataContracts.Fixes.Types;
 using Fixit.Core.DataContracts.Users;
 
 namespace Fixit.Core.DataContracts.Fixes.Notifications.Payloads
@@ -31,10 +30,10 @@ namespace Fixit.Core.DataContracts.Fixes.Notifications.Payloads
     public IList<FixScheduleRangeDto> Schedule { get; set; }
 
     [DataMember]
-    public FixCategoryDto FixCategory { get; set; }
+    public WorkCategoryDto WorkCategory { get; set; }
 
     [DataMember]
-    public FixTypeDto FixType { get; set; }
+    public WorkTypeDto WorkType { get; set; }
 
     [DataMember]
     public FixLocationDto Location { get; set; }
