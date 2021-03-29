@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Runtime.Serialization;
 using Fixit.Core.DataContracts.Classifications;
 using Fixit.Core.DataContracts.Fixes.Cost;
@@ -9,7 +8,7 @@ using Fixit.Core.DataContracts.Fixes.Locations;
 using Fixit.Core.DataContracts.Fixes.Schedule;
 using Fixit.Core.DataContracts.Users;
 
-namespace Fixit.Core.DataContracts.Fixes.Notifications.Payloads
+namespace Fixit.Core.DataContracts.Notifications.Payloads
 {
   [DataContract]
   public class FixAssignmentValidationDto : PayloadBaseDto
