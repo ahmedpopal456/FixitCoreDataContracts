@@ -14,5 +14,8 @@ namespace Fixit.Core.DataContracts.Users.Profile
 
     [DataMember]
     public AddressDto Address { get; set; }
+
+    [DataMember]
+    public UserAvailabilityDto Availability { get; set; }
   }
 }

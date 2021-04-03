@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.Serialization;
 using Fixit.Core.DataContracts.Seeders;
 using Fixit.Core.DataContracts.Users.Enums;
+using Fixit.Core.DataContracts.Users.Profile;
 using Fixit.Core.DataContracts.Users.Skills;
 
 namespace Fixit.Core.DataContracts.Users.Operations.Account
@@ -28,6 +29,9 @@ namespace Fixit.Core.DataContracts.Users.Operations.Account
     [DataMember]
     public string UserPrincipalName { get; set; }
 
+    [DataMember]
+    public UserAvailabilityDto Availability { get; set; }
+
     #region IFakeSeederAdapter
     public IList<UserAccountCreateRequestDto> SeedFakeDtos()
     {
@@ -41,7 +45,7 @@ namespace Fixit.Core.DataContracts.Users.Operations.Account
         Skills = new List<SkillDto>
         {
           new SkillDto { Id = Guid.NewGuid(), Name = "Hello" }
-        }   
+        }
       };
 
       UserAccountCreateRequestDto secondUserAccountToCreate = null;

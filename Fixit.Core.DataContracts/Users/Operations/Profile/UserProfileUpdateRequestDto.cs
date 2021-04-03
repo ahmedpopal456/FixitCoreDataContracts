@@ -2,6 +2,7 @@
 using System.Runtime.Serialization;
 using Fixit.Core.DataContracts.Seeders;
 using Fixit.Core.DataContracts.Users.Address;
+using Fixit.Core.DataContracts.Users.Profile;
 
 namespace Fixit.Core.DataContracts.Users.Operations.Profile
 {
@@ -18,6 +19,9 @@ namespace Fixit.Core.DataContracts.Users.Operations.Profile
     [DataMember]
     public AddressDto Address { get; set; }
 
+    [DataMember]
+    public UserAvailabilityDto Availability { get; set; }
+
     #region IFakeSeederAdapter
     public IList<UserProfileUpdateRequestDto> SeedFakeDtos()
     {
@@ -33,6 +37,10 @@ namespace Fixit.Core.DataContracts.Users.Operations.Profile
           Country = "Canada",
           PostalCode = "A1A 1A1",
           PhoneNumber = "514-123-4567"
+        },
+        Availability = new UserAvailabilityDto
+        {
+          Type = Enums.AvailabilityType.Always
         }
       };
 
