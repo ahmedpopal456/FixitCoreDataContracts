@@ -4,6 +4,7 @@ using System.Runtime.Serialization;
 using Fixit.Core.DataContracts.Users.Address;
 using Fixit.Core.DataContracts.Users.Documents;
 using Fixit.Core.DataContracts.Users.Enums;
+using Fixit.Core.DataContracts.Users.Profile;
 using Fixit.Core.DataContracts.Users.Skills;
 
 namespace Fixit.Core.DataContracts.Users
@@ -46,6 +47,9 @@ namespace Fixit.Core.DataContracts.Users
 
     [DataMember]
     public string TelephoneNumber { get; set; }
+
+    [DataMember]
+    public UserAvailabilityDto Availability { get; set; }
 
     [DataMember]
     public IEnumerable<SkillDto> Skills { get; set; }
