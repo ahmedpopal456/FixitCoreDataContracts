@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
+using Fixit.Core.DataContracts.Fixes.Cost;
 using Fixit.Core.DataContracts.Fixes.Details;
 using Fixit.Core.DataContracts.Fixes.Enums;
 using Fixit.Core.DataContracts.Fixes.Files;
@@ -36,6 +37,9 @@ namespace Fixit.Core.DataContracts.Fixes.Operations.Requests
 
     [DataMember]
     public FixStatuses Status { get; set; }
+
+    [DataMember]
+    public FixCostRangeDto ClientEstimatedCost { get; set; }
 
     public IList<FixUpdateRequestDto> SeedFakeDtos()
     {
@@ -88,6 +92,11 @@ namespace Fixit.Core.DataContracts.Fixes.Operations.Requests
             StartTimestampUtc = 1609102532
           }
 
+        },
+        ClientEstimatedCost = new FixCostRangeDto
+        {
+          MaximumCost = 400,
+          MinimumCost = 200
         },
         UpdatedByUser = new UserSummaryDto()
         {
