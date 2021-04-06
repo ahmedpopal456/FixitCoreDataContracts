@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
+using Fixit.Core.DataContracts.Fixes.Cost;
 using Fixit.Core.DataContracts.Fixes.Details;
 using Fixit.Core.DataContracts.Fixes.Enums;
 using Fixit.Core.DataContracts.Fixes.Files;
@@ -40,11 +41,14 @@ namespace Fixit.Core.DataContracts.Fixes.Operations.Requests
     [DataMember]
     public FixStatuses Status { get; set; }
 
+    [DataMember]
+    public FixCostRangeDto ClientEstimatedCost { get; set; }
+
     public IList<FixCreateRequestDto> SeedFakeDtos()
     {
       FixCreateRequestDto firstFixDocument = new FixCreateRequestDto
       {
-        Details = new List<FixDetailsDto>()
+        Details = new List<FixDetailsDto>
         {
           new FixDetailsDto
           {
@@ -54,7 +58,7 @@ namespace Fixit.Core.DataContracts.Fixes.Operations.Requests
             Type = "New"
           }
         },
-        Tags = new List<TagDto>()
+        Tags = new List<TagDto>
         {
           new TagDto
           {
@@ -67,7 +71,7 @@ namespace Fixit.Core.DataContracts.Fixes.Operations.Requests
             Name = "Toilet"
           }
         },
-        Images = new List<FileDto>()
+        Images = new List<FileDto>
         {
           new FileDto
           {
@@ -76,14 +80,14 @@ namespace Fixit.Core.DataContracts.Fixes.Operations.Requests
           }
 
         },
-        Location = new FixLocationDto()
+        Location = new FixLocationDto
         {
           Address = "123 Something",
           City = "Montreal",
           Province = "Quebec",
           PostalCode = "H4S 202"
         },
-        Schedule = new List<FixScheduleRangeDto>()
+        Schedule = new List<FixScheduleRangeDto>
         {
           new FixScheduleRangeDto
           {
@@ -92,13 +96,18 @@ namespace Fixit.Core.DataContracts.Fixes.Operations.Requests
           }
 
         },
-        CreatedByClient = new UserSummaryDto()
+        ClientEstimatedCost = new FixCostRangeDto
+        {
+          MaximumCost = 400,
+          MinimumCost = 200
+        },
+        CreatedByClient = new UserSummaryDto
         {
           Id = new Guid("8b418766-4a99-42a8-b6d7-9fe52b88ea93"),
           FirstName = "Mary",
           LastName = "Lamb"
         },
-        UpdatedByUser = new UserSummaryDto()
+        UpdatedByUser = new UserSummaryDto
         {
           Id = new Guid("8b418766-4a99-42a8-b6d7-9fe52b88ea93"),
           FirstName = "Mary",
@@ -112,7 +121,7 @@ namespace Fixit.Core.DataContracts.Fixes.Operations.Requests
       {
         firstFixDocument,
         secondFixDocument
-      };
+  };
     }
   }
 }
