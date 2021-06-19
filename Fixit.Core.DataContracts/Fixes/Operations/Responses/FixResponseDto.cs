@@ -26,7 +26,7 @@ namespace Fixit.Core.DataContracts.Fixes.Operations.Responses
     public IEnumerable<TagDto> Tags { get; set; }
 
     [DataMember]
-    public IEnumerable<FixDetailsDto> Details { get; set; }
+    public FixDetailsDto Details { get; set; }
 
     [DataMember]
     public IEnumerable<FileDto> Images { get; set; }
