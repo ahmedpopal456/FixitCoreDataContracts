@@ -21,7 +21,7 @@ namespace Fixit.Core.DataContracts.Fixes.Operations.Requests
     public IEnumerable<TagDto> Tags { get; set; }
 
     [DataMember]
-    public IEnumerable<FixDetailsDto> Details { get; set; }
+    public FixDetailsDto Details { get; set; }
 
     [DataMember]
     public IEnumerable<FileDto> Images { get; set; }
@@ -45,15 +45,12 @@ namespace Fixit.Core.DataContracts.Fixes.Operations.Requests
     {
       FixUpdateRequestDto firstFixDocument = new FixUpdateRequestDto
       {
-        Details = new List<FixDetailsDto>()
+        Details = new FixDetailsDto
         {
-          new FixDetailsDto
-          {
             Name = "Shower bath tub",
             Description = "Need to change shower bath tub",
             Category = "Bathroom",
             Type = "New"
-          }
         },
         Tags = new List<TagDto>()
         {
