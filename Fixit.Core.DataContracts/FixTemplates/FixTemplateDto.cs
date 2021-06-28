@@ -72,21 +72,14 @@ namespace Fixit.Core.DataContracts.FixTemplates
                 {
                   Id = new Guid("9be203c5-d1c1-4ee5-e1e8-08d8af5a6528"),
                   Name = "Field 1.1",
-                  Values = new List<string>
-                  {
+                  Value = 
                     "Value 1.1.1",
-                    "Value 1.1.2"
-                  }
                 },
                 new FixTemplateFieldDto()
                 {
                   Id = new Guid("ad5ceffd-89cb-4a8d-e1e9-08d8af5a6528"),
                   Name = "Field 1.2",
-                  Values = new List<string>
-                  {
-                    "Value 1.2.1",
-                    "Value 1.2.2"
-                  }
+                  Value = "Value 1.2.1",
                 },
               }
             }
