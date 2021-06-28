@@ -59,11 +59,7 @@ namespace Fixit.Core.DataContracts.FixTemplates.Operations.Requests.FixTemplates
                 new FixTemplateFieldCreateRequestDto()
                 {
                   Name = "Field 1.1",
-                  Values = new List<string>
-                  {
-                    "Value 1.1.1",
-                    "Value 1.1.2"
-                  }
+                  Value = "Value 1.1.1"
                 }
               }
             }

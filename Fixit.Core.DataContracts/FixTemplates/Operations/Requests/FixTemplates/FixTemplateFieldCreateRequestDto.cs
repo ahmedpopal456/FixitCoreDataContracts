@@ -6,6 +6,6 @@ namespace Fixit.Core.DataContracts.FixTemplates.Operations.Requests.FixTemplates
   {
     public string Name { get; set; }
 
-    public IEnumerable<string> Values { get; set; }
+    public string Value { get; set; }
   }
 }
