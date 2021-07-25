@@ -8,7 +8,7 @@ using Fixit.Core.DataContracts.FixPlans.Phases.Tasks;
 using Fixit.Core.DataContracts.Seeders;
 using Fixit.Core.DataContracts.Users;
 
-namespace Fixit.Core.DataContracts.FixPlans.Operations.Requests.FixPlans
+namespace Fixit.Core.DataContracts.FixPlans.Operations.Requests
 {
   [DataContract]
   public class FixPlanCreateRequestDto : IFakeSeederAdapter<FixPlanCreateRequestDto>

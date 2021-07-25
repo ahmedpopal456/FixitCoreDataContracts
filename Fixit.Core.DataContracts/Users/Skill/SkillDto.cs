@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.Serialization;
 using Fixit.Core.DataContracts.Seeders;
 
-namespace Fixit.Core.DataContracts.Users.Skills
+namespace Fixit.Core.DataContracts.Users.Skill
 {
   public class SkillDto : IFakeSeederAdapter<SkillDto>
   {

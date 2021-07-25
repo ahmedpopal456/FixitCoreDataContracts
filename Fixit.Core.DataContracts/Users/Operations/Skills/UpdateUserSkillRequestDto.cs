@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 using Fixit.Core.DataContracts.Seeders;
-using Fixit.Core.DataContracts.Users.Skills;
+using Fixit.Core.DataContracts.Users.Skill;
 
-namespace Fixit.Core.DataContracts.Users.Operations
+namespace Fixit.Core.DataContracts.Users.Operations.Skills
 {
   public class UpdateUserSkillRequestDto : OperationStatus, IFakeSeederAdapter<UpdateUserSkillRequestDto>
   {

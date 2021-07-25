@@ -5,7 +5,7 @@ using Fixit.Core.DataContracts.Users.Address;
 using Fixit.Core.DataContracts.Users.Documents;
 using Fixit.Core.DataContracts.Users.Enums;
 using Fixit.Core.DataContracts.Users.Profile;
-using Fixit.Core.DataContracts.Users.Skills;
+using Fixit.Core.DataContracts.Users.Skill;
 
 namespace Fixit.Core.DataContracts.Users
 {

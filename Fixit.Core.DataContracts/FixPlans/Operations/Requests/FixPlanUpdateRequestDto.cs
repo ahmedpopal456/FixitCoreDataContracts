@@ -5,7 +5,7 @@ using Fixit.Core.DataContracts.FixPlans.Phases;
 using Fixit.Core.DataContracts.FixPlans.Phases.Tasks;
 using Fixit.Core.DataContracts.Seeders;
 
-namespace Fixit.Core.DataContracts.FixPlans.Operations.Requests.FixPlans
+namespace Fixit.Core.DataContracts.FixPlans.Operations.Requests
 {
   [DataContract]
   public class FixPlanUpdateRequestDto: IFakeSeederAdapter<FixPlanUpdateRequestDto>
