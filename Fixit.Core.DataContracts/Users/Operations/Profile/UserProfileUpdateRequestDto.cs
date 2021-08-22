@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Runtime.Serialization;
 using Fixit.Core.DataContracts.Seeders;
-using Fixit.Core.DataContracts.Users.Address;
+using Fixit.Core.DataContracts.Users.Address.Obsolete;
 using Fixit.Core.DataContracts.Users.Profile;
 
 namespace Fixit.Core.DataContracts.Users.Operations.Profile

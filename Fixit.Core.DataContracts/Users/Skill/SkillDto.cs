@@ -13,6 +13,9 @@ namespace Fixit.Core.DataContracts.Users.Skill
     [DataMember]
     public string Name { get; set; }
 
+    [DataMember]
+    public float YearsOfExperience { get; set; }
+
     #region Fake Seeder
     public IList<SkillDto> SeedFakeDtos()
     {
