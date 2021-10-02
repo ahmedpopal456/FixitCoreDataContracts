@@ -6,8 +6,8 @@ using Fixit.Core.DataContracts.Users.Enums;
 
 namespace Fixit.Core.DataContracts.Users.Operations.Ratings
 {
-  [DataContract, KnownType(typeof(OperationStatus))]
-  public class UserRatingsCreateOrUpdateRequestDto : OperationStatus, IFakeSeederAdapter<UserRatingsCreateOrUpdateRequestDto>
+  [DataContract]
+  public class UserRatingsCreateOrUpdateRequestDto : IFakeSeederAdapter<UserRatingsCreateOrUpdateRequestDto>
   {
     [DataMember]
     public float Score { get; set; }

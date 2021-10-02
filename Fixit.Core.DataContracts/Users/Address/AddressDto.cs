@@ -12,7 +12,8 @@ namespace Fixit.Core.DataContracts.Users.Address
     //     Often this address is equivalent to the "postal address," which sometimes differs
     //     from country to country. This address is generally composed of one or more address_component
     //     fields.
-    public virtual string FormattedAddress { get; set; }
+    [DataMember]
+    public string FormattedAddress { get; set; }
     //
     // Summary:
     //     address_components[] is an array of separate address components used to compose
@@ -20,6 +21,7 @@ namespace Fixit.Core.DataContracts.Users.Address
     //     separate address components for "111" (the street number, "8th Avenue" (the route),
     //     "New York" (the city) and "NY" (the US state). Each address_component typically
     //     contains: ◦types[] is an array indicating the type of the address component.
-    public virtual IEnumerable<AddressComponentDto> AddressComponents { get; set; }
+    [DataMember]
+    public IEnumerable<AddressComponentDto> AddressComponents { get; set; }
   }
 }

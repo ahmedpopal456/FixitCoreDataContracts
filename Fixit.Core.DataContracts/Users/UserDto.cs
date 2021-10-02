@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 using Fixit.Core.DataContracts.Users.Address;
+using Fixit.Core.DataContracts.Users.Address.Obsolete;
 using Fixit.Core.DataContracts.Users.Documents;
 using Fixit.Core.DataContracts.Users.Enums;
 using Fixit.Core.DataContracts.Users.Profile;
 using Fixit.Core.DataContracts.Users.Skill;
+using ObsoleteAddressDto = Fixit.Core.DataContracts.Users.Address.Obsolete.ObsoleteAddressDto;
 
 namespace Fixit.Core.DataContracts.Users
 {
@@ -31,7 +33,11 @@ namespace Fixit.Core.DataContracts.Users
     public UserState State { get; set; }
 
     [DataMember]
-    public AddressDto Address { get; set; }
+    [Obsolete]
+    public ObsoleteAddressDto Address { get; set; }
+
+    [DataMember]
+    public IEnumerable<UserAddressDto> SavedAddresses { get; set; }
 
     [DataMember]
     public UserRole Role { get; set; }

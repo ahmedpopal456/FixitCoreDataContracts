@@ -5,7 +5,7 @@ namespace Fixit.Core.DataContracts.Users.Address.Obsolete
 {
   [DataContract]
   [Obsolete]
-  public class AddressDto
+  public class ObsoleteAddressDto
   {
     [DataMember]
     public string Address { get; set; }
