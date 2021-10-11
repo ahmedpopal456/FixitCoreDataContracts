@@ -3,7 +3,7 @@ using System.Runtime.Serialization;
 using Fixit.Core.DataContracts.FixPlans.Phases.Tasks.Enums;
 using Fixit.Core.DataContracts.Seeders;
 
-namespace Fixit.Core.DataContracts.FixPlans.Operations.Requests.FixPlans
+namespace Fixit.Core.DataContracts.FixPlans.Operations.Requests
 {
   [DataContract]
   public class FixTaskStatusUpdateRequestDto : IFakeSeederAdapter<FixTaskStatusUpdateRequestDto>

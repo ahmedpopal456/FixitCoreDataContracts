@@ -4,12 +4,12 @@ using System.Runtime.Serialization;
 using Fixit.Core.DataContracts.Seeders;
 using Fixit.Core.DataContracts.Users.Enums;
 using Fixit.Core.DataContracts.Users.Profile;
-using Fixit.Core.DataContracts.Users.Skills;
+using Fixit.Core.DataContracts.Users.Skill;
 
 namespace Fixit.Core.DataContracts.Users.Operations.Account
 {
-  [DataContract, KnownType(typeof(OperationStatus))]
-  public class UserAccountCreateRequestDto : OperationStatus, IFakeSeederAdapter<UserAccountCreateRequestDto>
+  [DataContract]
+  public class UserAccountCreateRequestDto : IFakeSeederAdapter<UserAccountCreateRequestDto>
   {
     [DataMember]
     public string Id { get; set; }

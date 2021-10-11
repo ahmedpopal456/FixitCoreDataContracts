@@ -2,7 +2,7 @@
 using System.Runtime.Serialization;
 using Fixit.Core.DataContracts.Users.Enums;
 using Fixit.Core.DataContracts.Users.Profile;
-using Fixit.Core.DataContracts.Users.Skills;
+using Fixit.Core.DataContracts.Users.Skill;
 
 namespace Fixit.Core.DataContracts.Users.Account
 {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Fixit.Core.DataContracts.Seeders;
-using Fixit.Core.DataContracts.Users.Skills;
+using Fixit.Core.DataContracts.Users.Skill;
 
 namespace Fixit.Core.DataContracts.Classifications
 {

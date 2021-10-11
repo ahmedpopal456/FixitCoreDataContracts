@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Runtime.Serialization;
 using Fixit.Core.DataContracts.Seeders;
-using Fixit.Core.DataContracts.Users.Address;
+using Fixit.Core.DataContracts.Users.Address.Obsolete;
 using Fixit.Core.DataContracts.Users.Profile;
 
 namespace Fixit.Core.DataContracts.Users.Operations.Profile
@@ -9,7 +9,6 @@ namespace Fixit.Core.DataContracts.Users.Operations.Profile
   [DataContract]
   public class UserProfileUpdateRequestDto : IFakeSeederAdapter<UserProfileUpdateRequestDto>
   {
-
     [DataMember]
     public string FirstName { get; set; }
 
@@ -17,7 +16,7 @@ namespace Fixit.Core.DataContracts.Users.Operations.Profile
     public string LastName { get; set; }
 
     [DataMember]
-    public AddressDto Address { get; set; }
+    public ObsoleteAddressDto Address { get; set; }
 
     [DataMember]
     public UserAvailabilityDto Availability { get; set; }
@@ -29,7 +28,7 @@ namespace Fixit.Core.DataContracts.Users.Operations.Profile
       {
         FirstName = "Jane",
         LastName = "Doe",
-        Address = new AddressDto()
+        Address = new ObsoleteAddressDto()
         {
           Address = "123 Something",
           City = "Montreal",

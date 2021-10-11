@@ -5,8 +5,8 @@ using Fixit.Core.DataContracts.Users.Enums;
 
 namespace Fixit.Core.DataContracts.Users.Operations.Account
 {
-  [DataContract, KnownType(typeof(OperationStatus))]
-  public class UserAccountResetPasswordRequestDto : OperationStatus, IFakeSeederAdapter<UserAccountResetPasswordRequestDto>
+  [DataContract]
+  public class UserAccountResetPasswordRequestDto : IFakeSeederAdapter<UserAccountResetPasswordRequestDto>
   {
     [DataMember]
     public string UserId { get; set; }

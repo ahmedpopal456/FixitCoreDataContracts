@@ -1,5 +1,5 @@
 ﻿using System.Runtime.Serialization;
-using Fixit.Core.DataContracts.Users.Address;
+using Fixit.Core.DataContracts.Users.Address.Obsolete;
 
 namespace Fixit.Core.DataContracts.Users.Profile
 {
@@ -13,7 +13,7 @@ namespace Fixit.Core.DataContracts.Users.Profile
     public string LastName { get; set; }
 
     [DataMember]
-    public AddressDto Address { get; set; }
+    public ObsoleteAddressDto Address { get; set; }
 
     [DataMember]
     public UserAvailabilityDto Availability { get; set; }

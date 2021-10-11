@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Runtime.Serialization;
+using Fixit.Core.DataContracts.Users.Address;
 using Fixit.Core.DataContracts.Users.Enums;
 
 namespace Fixit.Core.DataContracts.Users.Operations.Profile
@@ -27,5 +29,8 @@ namespace Fixit.Core.DataContracts.Users.Operations.Profile
 
     [DataMember]
     public UserStatusDto Status { get; set; }
+
+    [DataMember]
+    public List<UserAddressDto> SavedAddresses { get; set; }
   }
 }
