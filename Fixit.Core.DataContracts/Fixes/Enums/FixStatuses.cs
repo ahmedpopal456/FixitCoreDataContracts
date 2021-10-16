@@ -7,6 +7,8 @@
     InProgress,
     InReview,
     Done,
-    Terminated
+    Terminated,
+    TerminatedByClient,
+    TerminatedByCraftsman
   }
 }
