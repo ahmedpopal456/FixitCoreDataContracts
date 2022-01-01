@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Runtime.Serialization;
 using Fixit.Core.DataContracts.Seeders;
-using Fixit.Core.DataContracts.Users.Address.Obsolete;
 using Fixit.Core.DataContracts.Users.Profile;
 
 namespace Fixit.Core.DataContracts.Users.Operations.Profile
@@ -16,9 +15,6 @@ namespace Fixit.Core.DataContracts.Users.Operations.Profile
     public string LastName { get; set; }
 
     [DataMember]
-    public ObsoleteAddressDto Address { get; set; }
-
-    [DataMember]
     public UserAvailabilityDto Availability { get; set; }
 
     #region IFakeSeederAdapter
@@ -28,15 +24,6 @@ namespace Fixit.Core.DataContracts.Users.Operations.Profile
       {
         FirstName = "Jane",
         LastName = "Doe",
-        Address = new ObsoleteAddressDto()
-        {
-          Address = "123 Something",
-          City = "Montreal",
-          Province = "Quebec",
-          Country = "Canada",
-          PostalCode = "A1A 1A1",
-          PhoneNumber = "514-123-4567"
-        },
         Availability = new UserAvailabilityDto
         {
           Type = Enums.AvailabilityType.Always
