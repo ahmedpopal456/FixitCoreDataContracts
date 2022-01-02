@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Runtime.Serialization;
+﻿using System.Runtime.Serialization;
 
 namespace Fixit.Core.DataContracts.Users.Address
 {
@@ -15,5 +13,8 @@ namespace Fixit.Core.DataContracts.Users.Address
 
     [DataMember]
     public string AptSuiteFloor {get; set;}
+
+    [DataMember]
+    public bool IsCurrentAddress { get; set; }
   }
 }
