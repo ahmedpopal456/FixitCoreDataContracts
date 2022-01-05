@@ -4,9 +4,9 @@ using Fixit.Core.DataContracts.Classifications;
 using Fixit.Core.DataContracts.Fixes.Cost;
 using Fixit.Core.DataContracts.Fixes.Details;
 using Fixit.Core.DataContracts.Fixes.Files;
-using Fixit.Core.DataContracts.Fixes.Locations;
 using Fixit.Core.DataContracts.Fixes.Schedule;
 using Fixit.Core.DataContracts.Users;
+using Fixit.Core.DataContracts.Users.Address;
 
 namespace Fixit.Core.DataContracts.Notifications.Payloads
 {
@@ -35,7 +35,7 @@ namespace Fixit.Core.DataContracts.Notifications.Payloads
     public WorkTypeDto WorkType { get; set; }
 
     [DataMember]
-    public FixLocationDto Location { get; set; }
+    public AddressDto Location { get; set; }
 
     [DataMember]
     public IEnumerable<FileDto> Images { get; set; }

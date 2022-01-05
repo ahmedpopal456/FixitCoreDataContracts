@@ -1,22 +1,8 @@
-﻿using System.Runtime.Serialization;
+﻿using Fixit.Core.DataContracts.Users.Address;
 
 namespace Fixit.Core.DataContracts.Fixes.Locations
 {
-  public class FixLocationResponseDto: OperationStatus
+  public class FixLocationResponseDto : AddressDto
   {
-    [DataMember]
-    public string Address { get; set; }
-
-    [DataMember]
-    public string City { get; set; }
-
-    [DataMember]
-    public string Province { get; set; }
-
-    [DataMember]
-    public string PostalCode { get; set; }
-
-    [DataMember]
-    public string LastUsedTimeStampUtc { get; set; }
   }
 }

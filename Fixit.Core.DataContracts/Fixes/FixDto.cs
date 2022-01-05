@@ -5,11 +5,11 @@ using Fixit.Core.DataContracts.Fixes.Cost;
 using Fixit.Core.DataContracts.Fixes.Details;
 using Fixit.Core.DataContracts.Fixes.Enums;
 using Fixit.Core.DataContracts.Fixes.Files;
-using Fixit.Core.DataContracts.Fixes.Locations;
 using Fixit.Core.DataContracts.Fixes.Schedule;
 using Fixit.Core.DataContracts.Fixes.Tags;
 using Fixit.Core.DataContracts.FixPlans;
 using Fixit.Core.DataContracts.Users;
+using Fixit.Core.DataContracts.Users.Address;
 
 namespace Fixit.Core.DataContracts.Fixes
 {
@@ -32,7 +32,7 @@ namespace Fixit.Core.DataContracts.Fixes
     public IEnumerable<FileDto> Images { get; set; }
 
     [DataMember]
-    public FixLocationDto Location { get; set; }
+    public AddressDto Location { get; set; }
 
     [DataMember]
     public IEnumerable<FixScheduleRangeDto> Schedule { get; set; }
