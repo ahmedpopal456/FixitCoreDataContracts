@@ -18,7 +18,7 @@ namespace Fixit.Core.DataContracts.Notifications.Payloads
     public UserSummaryDto AssignedToCraftsman { get; set; }
 
     [DataMember]
-    public FixCostRangeDto ClientBudget { get; set; }
+    public FixCostRangeDto ClientEstimatedCost { get; set; }
 
     [DataMember]
     public float SystemCalculatedCost { get; set; }
