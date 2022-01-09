@@ -5,6 +5,7 @@ using Fixit.Core.DataContracts.Fixes.Cost;
 using Fixit.Core.DataContracts.Fixes.Details;
 using Fixit.Core.DataContracts.Fixes.Files;
 using Fixit.Core.DataContracts.Fixes.Schedule;
+using Fixit.Core.DataContracts.Fixes.Tags;
 using Fixit.Core.DataContracts.Users;
 using Fixit.Core.DataContracts.Users.Address;
 
@@ -41,6 +42,12 @@ namespace Fixit.Core.DataContracts.Notifications.Payloads
     public IEnumerable<FileDto> Images { get; set; }
 
     [DataMember]
-    public FixDetailsDto FixDetails { get; set; }
+    public FixDetailsDto Details { get; set; }
+
+    [DataMember]
+    public UserSummaryDto CreatedByClient { get; set; }
+
+    [DataMember]
+    public IEnumerable<TagDto> Tags { get; set; }
   }
 }
