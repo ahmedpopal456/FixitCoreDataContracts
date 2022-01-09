@@ -10,22 +10,10 @@ using Fixit.Core.DataContracts.Users.Skill;
 namespace Fixit.Core.DataContracts.Users
 {
   [DataContract]
-  public class UserDto
+  public class UserDto : UserSummaryDto
   {
     [DataMember]
-    public Guid Id { get; set; }
-
-    [DataMember]
     public string UserPrincipalName { get; set; }
-
-    [DataMember]
-    public string ProfilePictureUrl { get; set; }
-
-    [DataMember]
-    public string FirstName { get; set; }
-
-    [DataMember]
-    public string LastName { get; set; }
 
     [DataMember]
     public UserState State { get; set; }
@@ -34,16 +22,10 @@ namespace Fixit.Core.DataContracts.Users
     public IEnumerable<UserAddressDto> SavedAddresses { get; set; }
 
     [DataMember]
-    public UserRole Role { get; set; }
-
-    [DataMember]
     public Gender Gender { get; set; }
 
     [DataMember]
     public bool IsDeleted { get; set; }
-
-    [DataMember]
-    public UserStatusDto Status { get; set; }
 
     [DataMember]
     public string TelephoneNumber { get; set; }

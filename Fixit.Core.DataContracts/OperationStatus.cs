@@ -3,7 +3,6 @@ using System.Runtime.Serialization;
 
 namespace Fixit.Core.DataContracts
 {
-  // TODO: add Fixit error code definitions
   [DataContract]
   public class OperationStatus
   {
@@ -12,6 +11,8 @@ namespace Fixit.Core.DataContracts
 
     [DataMember]
     public string OperationMessage { get; set; }
+
+    public FixitResponseInfoDto? Error { get; set; }
 
 #nullable enable
     [DataMember]

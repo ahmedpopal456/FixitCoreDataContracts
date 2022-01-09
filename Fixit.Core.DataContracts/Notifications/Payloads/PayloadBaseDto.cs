@@ -7,6 +7,6 @@ namespace Fixit.Core.DataContracts.Notifications.Payloads
   public class PayloadBaseDto
   {
     [DataMember]
-    public Guid Id { get; set; }
+    public string Id { get; set; }
   }
 }

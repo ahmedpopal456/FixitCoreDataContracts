@@ -1,6 +1,7 @@
 ﻿using System.Runtime.Serialization;
+using Fixit.Core.DataContracts.Users.Address;
 
-namespace Fixit.Core.DataContracts.Users.Address
+namespace Fixit.Core.DataContracts.Users.Operations.Addresses
 {
   [DataContract]
   public class UserAddressUpsertRequestDto

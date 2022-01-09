@@ -5,17 +5,8 @@ using Fixit.Core.DataContracts.Users.Enums;
 namespace Fixit.Core.DataContracts.Users
 {
   [DataContract]
-  public class UserSummaryDto
+  public class UserSummaryDto : UserBaseDto
   {
-    [DataMember]
-    public Guid Id { get; set; }
-
-    [DataMember]
-    public string FirstName { get; set; }
-
-    [DataMember]
-    public string LastName { get; set; }
-
     [DataMember]
     public string ProfilePictureUrl { get; set; }
 

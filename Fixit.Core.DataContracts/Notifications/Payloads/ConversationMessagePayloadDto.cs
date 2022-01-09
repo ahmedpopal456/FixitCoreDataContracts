@@ -1,5 +1,4 @@
 ﻿using System.Runtime.Serialization;
-using Fixit.Core.DataContracts.Chat.Enums;
 using Fixit.Core.DataContracts.Users;
 
 namespace Fixit.Core.DataContracts.Notifications.Payloads
@@ -12,10 +11,7 @@ namespace Fixit.Core.DataContracts.Notifications.Payloads
   {
 
     [DataMember]
-    public UserSummaryDto SentByUser { get; set; }
-
-    [DataMember]
-    public MessageType Type { get; set; }
+    public UserBaseDto SentByUser { get; set; }
 
     [DataMember]
     public string Message { get; set; }
