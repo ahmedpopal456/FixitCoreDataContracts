@@ -16,6 +16,8 @@ namespace Fixit.Core.DataContracts.Fixes.Operations.Requests
   [DataContract]
   public class FixCreateRequestDto : OperationStatus, IFakeSeederAdapter<FixCreateRequestDto>
   {
+    [DataMember]
+    public Guid Id { get; set; }
 
     [DataMember]
     public IEnumerable<TagDto> Tags { get; set; }
@@ -49,12 +51,12 @@ namespace Fixit.Core.DataContracts.Fixes.Operations.Requests
       FixCreateRequestDto firstFixDocument = new FixCreateRequestDto
       {
         Details = new FixDetailsDto
-          {
-            Name = "Shower",
-            Description = "Need to change shower",
-            Category = "Bathroom",
-            Type = "New"
-          },
+        {
+          Name = "Shower",
+          Description = "Need to change shower",
+          Category = "Bathroom",
+          Type = "New"
+        },
         Tags = new List<TagDto>
         {
           new TagDto
