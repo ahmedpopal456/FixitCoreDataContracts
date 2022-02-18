@@ -74,6 +74,7 @@ namespace Fixit.Core.DataContracts.Fixes.Operations.Requests
         {
           new FileDto
           {
+            Id = new Guid("8b418766-4a99-42a8-b6d7-9fe52b88ea97"),
             Name = "image-bathroom",
             Url = "/image.png"
           }

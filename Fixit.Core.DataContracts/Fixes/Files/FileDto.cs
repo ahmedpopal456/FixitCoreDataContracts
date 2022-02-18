@@ -1,10 +1,14 @@
-﻿using System.Runtime.Serialization;
+﻿using System;
+using System.Runtime.Serialization;
 
 namespace Fixit.Core.DataContracts.Fixes.Files
 {
   [DataContract]
   public class FileDto
   {
+    [DataMember]
+    public Guid Id { get; set; }
+
     [DataMember]
     public string Name { get; set; }
 

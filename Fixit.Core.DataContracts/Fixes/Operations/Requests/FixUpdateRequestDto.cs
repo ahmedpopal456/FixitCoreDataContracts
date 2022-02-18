@@ -47,10 +47,10 @@ namespace Fixit.Core.DataContracts.Fixes.Operations.Requests
       {
         Details = new FixDetailsDto
         {
-            Name = "Shower bath tub",
-            Description = "Need to change shower bath tub",
-            Category = "Bathroom",
-            Type = "New"
+          Name = "Shower bath tub",
+          Description = "Need to change shower bath tub",
+          Category = "Bathroom",
+          Type = "New"
         },
         Tags = new List<TagDto>()
         {
@@ -69,6 +69,7 @@ namespace Fixit.Core.DataContracts.Fixes.Operations.Requests
         {
           new FileDto
           {
+            Id = new Guid("8b418766-4a99-42a8-b6d7-9fe52b88ea97"),
             Name = "image-bathroom",
             Url = "/image.png"
           }
