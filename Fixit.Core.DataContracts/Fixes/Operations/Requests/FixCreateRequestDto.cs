@@ -7,6 +7,7 @@ using Fixit.Core.DataContracts.Fixes.Enums;
 using Fixit.Core.DataContracts.Fixes.Files;
 using Fixit.Core.DataContracts.Fixes.Schedule;
 using Fixit.Core.DataContracts.Fixes.Tags;
+using Fixit.Core.DataContracts.FixTemplates;
 using Fixit.Core.DataContracts.Seeders;
 using Fixit.Core.DataContracts.Users;
 using Fixit.Core.DataContracts.Users.Address;
@@ -33,6 +34,9 @@ namespace Fixit.Core.DataContracts.Fixes.Operations.Requests
 
     [DataMember]
     public IEnumerable<FixScheduleRangeDto> Schedule { get; set; }
+
+    [DataMember]
+    public IEnumerable<LicenseDto> Licenses { get; set; }
 
     [DataMember]
     public UserSummaryDto CreatedByClient { get; set; }

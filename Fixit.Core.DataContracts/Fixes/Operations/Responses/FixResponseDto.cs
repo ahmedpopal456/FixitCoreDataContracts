@@ -8,6 +8,7 @@ using Fixit.Core.DataContracts.Fixes.Files;
 using Fixit.Core.DataContracts.Fixes.Schedule;
 using Fixit.Core.DataContracts.Fixes.Tags;
 using Fixit.Core.DataContracts.FixPlans;
+using Fixit.Core.DataContracts.FixTemplates;
 using Fixit.Core.DataContracts.Users;
 using Fixit.Core.DataContracts.Users.Address;
 
@@ -36,6 +37,9 @@ namespace Fixit.Core.DataContracts.Fixes.Operations.Responses
 
     [DataMember]
     public IEnumerable<FixScheduleRangeDto> Schedule { get; set; }
+
+    [DataMember]
+    public IEnumerable<LicenseDto> Licenses { get; set; }
 
     [DataMember]
     public FixCostRangeDto ClientEstimatedCost { get; set; }
