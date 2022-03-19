@@ -1,6 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Runtime.Serialization;
+using Fixit.Core.DataContracts.Users.Address;
 using Fixit.Core.DataContracts.Users.Enums;
 using Fixit.Core.DataContracts.Users.Skill;
 
@@ -20,5 +20,8 @@ namespace Fixit.Core.DataContracts.Users
 
     [DataMember]
     public IEnumerable<UserLicenseDto> Licenses { get; set; }
+
+    [DataMember]
+    public List<UserAddressDto> SavedAddresses { get; set; }
   }
 }

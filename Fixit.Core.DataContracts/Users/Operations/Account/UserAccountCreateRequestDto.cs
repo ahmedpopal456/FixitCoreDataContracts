@@ -24,7 +24,7 @@ namespace Fixit.Core.DataContracts.Users.Operations.Account
     public UserRole Role { get; set; }
 
     [DataMember]
-    public IEnumerable<UserLicenseDto> Skills { get; set; }
+    public IEnumerable<UserLicenseDto> Licenses { get; set; }
 
     [DataMember]
     public string UserPrincipalName { get; set; }

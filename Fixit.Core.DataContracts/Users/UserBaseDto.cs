@@ -10,6 +10,9 @@ namespace Fixit.Core.DataContracts.Users
     public Guid Id { get; set; }
 
     [DataMember]
+    public string UserPrincipalName { get; set; }
+
+    [DataMember]
     public string FirstName { get; set; }
 
     [DataMember]
