@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Runtime.Serialization;
 using Fixit.Core.DataContracts.Users.Enums;
+using Fixit.Core.DataContracts.Users.Skill;
 
 namespace Fixit.Core.DataContracts.Users
 {
@@ -15,5 +17,8 @@ namespace Fixit.Core.DataContracts.Users
 
     [DataMember]
     public UserStatusDto Status { get; set; }
+
+    [DataMember]
+    public IEnumerable<UserLicenseDto> Licenses { get; set; }
   }
 }

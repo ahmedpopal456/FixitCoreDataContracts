@@ -8,6 +8,6 @@ namespace Fixit.Core.DataContracts.Users.Details.Craftsman
   public class CraftsmanDetailsDto
   {
     [DataMember]
-    public IEnumerable<SkillDto> Skills { get; set; }
+    public IEnumerable<UserLicenseDto> Skills { get; set; }
   }
 }

@@ -28,6 +28,8 @@ namespace Fixit.Core.DataContracts.FixTemplates.Operations.Requests.FixTemplates
 
     public IEnumerable<FixTemplateSectionCreateRequestDto> Sections { get; set; }
 
+    public IEnumerable<Guid> LicenseIds { get; set; }
+
     #region Fake Seeder
     public IList<FixTemplateCreateRequestDto> SeedFakeDtos()
     {

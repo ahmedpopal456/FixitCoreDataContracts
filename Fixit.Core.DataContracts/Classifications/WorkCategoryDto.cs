@@ -11,7 +11,7 @@ namespace Fixit.Core.DataContracts.Classifications
 
 		public string Name { get; set; }
 
-		public IEnumerable<SkillDto> Skills { get; set; }
+		public IEnumerable<UserLicenseDto> Skills { get; set; }
 
 		#region Fake Seeder
 		public IList<WorkCategoryDto> SeedFakeDtos()

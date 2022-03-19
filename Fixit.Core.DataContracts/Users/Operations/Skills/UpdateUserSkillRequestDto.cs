@@ -12,7 +12,7 @@ namespace Fixit.Core.DataContracts.Users.Operations.Skills
     public Guid UserId { get; set; }
 
     [DataMember]
-    public IEnumerable<SkillDto> Skills { get; set; }
+    public IEnumerable<UserLicenseDto> Skills { get; set; }
 
     [DataMember]
     public long AttributedAtTimestampUtc { get; set; }
@@ -24,7 +24,7 @@ namespace Fixit.Core.DataContracts.Users.Operations.Skills
     {
       UpdateUserSkillRequestDto firstSkill = new UpdateUserSkillRequestDto
       {
-        Skills = new List<SkillDto> { new SkillDto { Id = Guid.NewGuid(), Name = "Hello" } },
+        Skills = new List<UserLicenseDto> { new UserLicenseDto { Id = Guid.NewGuid(), Name = "Hello" } },
         AttributedAtTimestampUtc = DateTimeOffset.Now.ToUnixTimeSeconds(),
         ExpiresAtTimestampUtc = DateTimeOffset.Now.ToUnixTimeSeconds()
       };

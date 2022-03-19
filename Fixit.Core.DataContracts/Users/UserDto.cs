@@ -34,9 +34,6 @@ namespace Fixit.Core.DataContracts.Users
     public UserAvailabilityDto Availability { get; set; }
 
     [DataMember]
-    public IEnumerable<SkillDto> Skills { get; set; }
-
-    [DataMember]
     public long CreatedTimestampsUtc { get; set; }
 
     [DataMember]

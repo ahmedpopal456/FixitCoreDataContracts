@@ -24,7 +24,7 @@ namespace Fixit.Core.DataContracts.Users.Operations.Account
     public UserRole Role { get; set; }
 
     [DataMember]
-    public IEnumerable<SkillDto> Skills { get; set; }
+    public IEnumerable<UserLicenseDto> Skills { get; set; }
 
     [DataMember]
     public string UserPrincipalName { get; set; }
@@ -42,9 +42,9 @@ namespace Fixit.Core.DataContracts.Users.Operations.Account
         LastName = "Doe",
         Role = UserRole.Craftsman,
         UserPrincipalName = "johnDoe@test.com",
-        Skills = new List<SkillDto>
+        Skills = new List<UserLicenseDto>
         {
-          new SkillDto { Id = Guid.NewGuid(), Name = "Hello" }
+          new UserLicenseDto { Id = Guid.NewGuid(), Name = "Hello" }
         }
       };
 

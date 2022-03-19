@@ -31,6 +31,8 @@ namespace Fixit.Core.DataContracts.FixTemplates
 
     public IEnumerable<FixTemplateSectionDto> Sections { get; set; }
 
+    public IEnumerable<LicenseDto> Licenses { get; set; }
+
     #region Fake Seeder
     public IList<FixTemplateDto> SeedFakeDtos()
     {
