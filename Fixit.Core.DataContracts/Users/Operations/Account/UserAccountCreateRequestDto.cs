@@ -42,7 +42,7 @@ namespace Fixit.Core.DataContracts.Users.Operations.Account
         LastName = "Doe",
         Role = UserRole.Craftsman,
         UserPrincipalName = "johnDoe@test.com",
-        Skills = new List<UserLicenseDto>
+        Licenses = new List<UserLicenseDto>
         {
           new UserLicenseDto { Id = Guid.NewGuid(), Name = "Hello" }
         }
