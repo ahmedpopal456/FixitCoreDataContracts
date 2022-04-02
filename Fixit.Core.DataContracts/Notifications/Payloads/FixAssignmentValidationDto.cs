@@ -17,5 +17,8 @@ namespace Fixit.Core.DataContracts.Notifications.Payloads
 
     [DataMember]
     public IList<FixScheduleRangeDto> Schedule { get; set; }
+
+    [DataMember]
+    public UserSummaryDto CreatedByClient { get; set; }
   }
 }
