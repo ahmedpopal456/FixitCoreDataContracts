@@ -4,10 +4,9 @@
   {
     FixClientRequest,
     FixCraftsmanResponse,
-    FixPlanUpdate,
-    FixProgressUpdate,
+    FixAccepted,
+    FixCompleted,
     NewMessage,
     NewConversation,
-    RatingUpdate
   }
 }
