@@ -28,6 +28,9 @@ namespace Fixit.Core.DataContracts.Notifications.Operations
     [DataMember]
     public bool Silent { get; set; }
 
+    [DataMember]
+    public bool IsTransient { get; set; }
+
     public bool Validate()
     {
       bool isValid = ((Title != null)

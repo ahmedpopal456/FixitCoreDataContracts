@@ -10,7 +10,7 @@ namespace Fixit.Core.DataContracts.Chat.Messages
   public class ConversationMessageDto : ITimeTraceableEntity
   {
     [DataMember]
-    public long Id { get; set; }
+    public string Id { get; set; }
 
     [DataMember]
     public string Message { get; set; }
