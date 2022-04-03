@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Runtime.Serialization;
-using Fixit.Core.DataContracts.Users.Skill;
+using Fixit.Core.DataContracts.Users.License;
 
 namespace Fixit.Core.DataContracts.Users.Details.Craftsman
 {

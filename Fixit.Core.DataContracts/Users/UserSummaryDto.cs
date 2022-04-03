@@ -2,7 +2,7 @@
 using System.Runtime.Serialization;
 using Fixit.Core.DataContracts.Users.Address;
 using Fixit.Core.DataContracts.Users.Enums;
-using Fixit.Core.DataContracts.Users.Skill;
+using Fixit.Core.DataContracts.Users.License;
 
 namespace Fixit.Core.DataContracts.Users
 {
@@ -19,7 +19,7 @@ namespace Fixit.Core.DataContracts.Users
     public UserStatusDto Status { get; set; }
 
     [DataMember]
-    public IEnumerable<UserLicenseDto> Licenses { get; set; }
+    public List<UserLicenseDto> Licenses { get; set; }
 
     [DataMember]
     public List<UserAddressDto> SavedAddresses { get; set; }

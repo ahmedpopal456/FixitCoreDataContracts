@@ -1,4 +1,4 @@
-﻿namespace Fixit.Core.DataContracts.Users.Documents.Enums
+﻿namespace Fixit.Core.DataContracts.Users.Licenses.Enums
 {
   public enum ProcessingStatus
   {

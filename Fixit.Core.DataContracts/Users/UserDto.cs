@@ -1,25 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Runtime.Serialization;
-using Fixit.Core.DataContracts.Users.Address;
-using Fixit.Core.DataContracts.Users.Documents;
+﻿using System.Runtime.Serialization;
 using Fixit.Core.DataContracts.Users.Enums;
 using Fixit.Core.DataContracts.Users.Profile;
-using Fixit.Core.DataContracts.Users.Skill;
 
 namespace Fixit.Core.DataContracts.Users
 {
   [DataContract]
   public class UserDto : UserSummaryDto
   {
-    [DataMember]
-    public string UserPrincipalName { get; set; }
 
     [DataMember]
     public UserState State { get; set; }
 
-    [DataMember]
-    public IEnumerable<UserAddressDto> SavedAddresses { get; set; }
 
     [DataMember]
     public Gender Gender { get; set; }
@@ -39,7 +30,5 @@ namespace Fixit.Core.DataContracts.Users
     [DataMember]
     public long UpdatedTimestampsUtc { get; set; }
 
-    [DataMember]
-    public IEnumerable<DocumentSummaryDto> Documents { get; set; }
   }
 }

@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 using Fixit.Core.DataContracts.Seeders;
+using Fixit.Core.DataContracts.Users.Licenses.Enums;
 
-namespace Fixit.Core.DataContracts.Users.Skill
+namespace Fixit.Core.DataContracts.Users.License
 {
   public class UserLicenseDto : IFakeSeederAdapter<UserLicenseDto>
   {
@@ -18,6 +19,18 @@ namespace Fixit.Core.DataContracts.Users.Skill
 
     [DataMember]
     public float YearsOfExperience { get; set; }
+
+    [DataMember]
+    public string AttachmentUrl { get; set; }
+
+    [DataMember]
+    public ProcessingStatus ProcessingStatus { get; set; }
+
+    [DataMember]
+    public long CreatedTimestampUtc { get; set; }
+
+    [DataMember]
+    public long UpdatedTimestampUtc { get; set; }
 
     #region Fake Seeder
     public IList<UserLicenseDto> SeedFakeDtos()
